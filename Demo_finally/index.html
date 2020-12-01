@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index_css/index.css"/>
+    <link rel="stylesheet" href="css/index_css/cycplay.css">
+    <link rel="stylesheet" href="css/index_css/toplist.css">
+    <link rel="stylesheet" href="css/index_css/detailpage.css">
+    <link rel="stylesheet" href="css/index_css/hotpoint.css">
+    <link rel="stylesheet" href="css/btn_css/btn.css" />
+    <link rel="stylesheet" href="css/btn_css/jquery-ui.min.css" />
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/index_js/cycplay.js"></script>
+    <script type="text/javascript" src="js/index_js/sliderlist.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/index_js/init_index.js"></script>
+    <script type="text/javascript" src="js/index_js/update.js"></script>
+    <script type="text/javascript" src="js/index_js/init_detail_page.js"></script>
+    <script type="text/javascript" src="js/index_js/changepage.js"></script>
+    <script type="text/javascript" src="js/index_js/Tab.js"></script>
+    <script type="text/javascript" src="js/btn_js/jquery-ui.js" ></script>
+    <script type="text/javascript" src="js/btn_js/jquery-ui.min.js" ></script>
+    <script type="text/javascript" src="js/btn_js/update_btn.js" ></script>
+
+</head>
+
+<body>
+<div class="head">
+    <a href="#" style="margin-left: 20px;color: #ffffff;">首页</a>
+    <a href="#">列表</a>
+    <a href="#">正版商城</a>
+    <a href="#">新闻</a>
+    <a href="#">直播</a>
+    <a href="#">发现</a>
+    <a href="#">社区</a>
+    <a href="#">会员</a>
+    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+    <div class="title_area">
+        <a id="appdownloda" href="#"><i class="fa fa-mobile" style="font-size: 20px;margin: 5px;" aria-hidden="true"></i>App下载</a>
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#" style="background: red;margin-right: 20px;font-size: 24px;"><i class="fa fa-shopping-cart"
+                                                                                   aria-hidden="true"></i></a>
+        <img id="code1" style="position: fixed;top: 70px;right: 200px;z-index: 20;display: none" src="img/code1.png" alt="">
+        <img id="code2" style="position: fixed;top: 65px;right: 377px;z-index: 20;display: none" src="img/code2.png" alt="">
+    </div>
+</div>
+<div class="index_page">
+    <div class="search">
+        <div>
+            <div class="input type">
+                <select>
+                    <option value="0">全部</option>
+                    <option value="1">电影</option>
+                    <option value="2">影人</option>
+                    <option value="3">影院</option>
+                    <option value="4">商品</option>
+                    <option value="5">新闻</option>
+                </select>
+            </div>
+            <input type="text" class="input searchmsg" placeholder="搜索电影、影院、商品、新闻"/>
+            <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <!--轮播图整体div-->
+    <div class="banner">
+        <!--无序列表承载轮播的图片-->
+        <ul class="img">
+            <li><a href="http://news.mtime.com/2018/10/11/1584994.html" target="_blank"><img src="img/pic1.jpg"
+                                                                                             alt="第1张图片"></a></li>
+            <li><a href="http://news.mtime.com/2018/10/09/1584907.html" target="_blank"><img src="img/pic2.jpg"
+                                                                                             alt="第2张图片"></a></li>
+            <li><a href="http://news.mtime.com/2018/10/10/1584949.html" target="_blank"><img src="img/pic3.jpg"
+                                                                                             alt="第3张图片"></a></li>
+            <li><a href="http://news.mtime.com/2018/10/01/1584763.html" target="_blank"><img src="img/pic4.jpg"
+                                                                                             alt="第4张图片"></a></li>
+            <li><a href="http://news.mtime.com/2018/10/08/1584876.html" target="_blank"><img src="img/pic5.jpg"
+                                                                                             alt="第5张图片"></a></li>
+        </ul>
+        <!--用来放置圆点具体实施在js代码中呈现-->
+        <ul class="num"></ul>
+        <!--左右点击按钮-->
+        <div class="btn">
+            <span class="prev" id="banner_prev"><</span>
+            <span class="next" id="banner_next">></span>
+        </div>
+    </div>
+
+    <div class="indexstruct hotnews">
+        <h4 class="customtitle">今日热点</h4>
+        <div class="customnav"><i></i>
+            <dl>
+                <dd>
+                    <a href="#"  >时光对话</a>
+                </dd>
+                <dd>
+                    <a href="#"  >产业聚焦</a>
+                </dd>
+                <dd>
+                    <a href="#"  >电视情报</a>
+                </dd>
+                <dd>
+                    <a href="./funnews.html" target="_blank" data-pan="M17_Index_Today_Nav4">全球拾趣</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="newslist fix" data-plugin="imgLoad">
+            <dl class="newspart">
+                <dd>
+                    <div class="newsitem">
+                        <a href="http://news.mtime.com/2018/10/14/1585107.html" target="_blank" title="《霹雳娇娃》德国汉堡热拍曝片场照 “小K“阳台待机 埃拉·巴林斯卡街头举枪
+" class="imgbox" data-pan="M17_Index__News11_Img"><img src="http://img5.mtime.cn/mg/2018/10/14/172455.28181589.jpg" alt="《霹雳娇娃》德国汉堡热拍曝片场照 “小K“阳台待机 埃拉·巴林斯卡街头举枪
+" width="285" height="160"><i class="tag"></i><em class="picture">图集</em></a>
+                        <h3><a href="http://news.mtime.com/2018/10/14/1585107.html" target="_blank" data-pan="M17_Index__News11_Text">《霹雳娇娃》德国汉堡热拍曝片场照</a></h3>
+                        <p class="describe">
+                            <a href="http://news.mtime.com/2018/10/14/1585107.html" target="_blank" data-pan="M17_Index__News11_Text">“小K“阳台待机 埃拉·巴林斯卡街头举枪
+                            </a>
+                        </p>
+                    </div>
+                </dd>
+                <dd>
+                    <div class="newsitem">
+                        <a href="http://news.mtime.com/2018/10/14/1585104.html" target="_blank" title="张震倪妮&quot;雪暴&quot;釜山影节捧新浪潮奖 曝全新海报 袁和平执导&quot;叶问外传&quot;闭幕上映" class="imgbox" data-pan="M17_Index__News12_Img"><img src="http://img5.mtime.cn/mg/2018/10/14/150208.80924070.jpg" alt="张震倪妮&quot;雪暴&quot;釜山影节捧新浪潮奖 曝全新海报 袁和平执导&quot;叶问外传&quot;闭幕上映" width="285" height="160"><i class="tag"></i><em class="picture">图集</em></a>
+                        <h3><a href="http://news.mtime.com/2018/10/14/1585104.html" target="_blank" data-pan="M17_Index__News12_Text">张震倪妮"雪暴"釜山影节捧新浪潮奖</a></h3>
+                        <p class="describe">
+                            <a href="http://news.mtime.com/2018/10/14/1585104.html" target="_blank" data-pan="M17_Index__News12_Text">曝全新海报 袁和平执导"叶问外传"闭幕上映</a>
+                        </p>
+                    </div>
+                </dd>
+                <dd>
+                    <div class="newsitem">
+                        <a href="http://news.mtime.com/2018/10/14/1585105.html" target="_blank" title="周润发计划将56亿港币身家全部捐献 称“钱不是我的，我只是暂时保管它”
+" class="imgbox" data-pan="M17_Index__News13_Img"><img src="http://img5.mtime.cn/mg/2018/10/14/150413.20572986.jpg" alt="周润发计划将56亿港币身家全部捐献 称“钱不是我的，我只是暂时保管它”
+" width="285" height="160"><i class="tag"></i></a>
+                        <h3><a href="http://news.mtime.com/2018/10/14/1585105.html" target="_blank" data-pan="M17_Index__News13_Text">周润发计划将56亿港币身家全部捐献</a></h3>
+                        <p class="describe">
+                            <a href="http://news.mtime.com/2018/10/14/1585105.html" target="_blank" data-pan="M17_Index__News13_Text">称“钱不是我的，我只是暂时保管它”
+                            </a>
+                        </p>
+                    </div>
+                </dd>
+                <dd>
+                    <div class="newsitem">
+                        <a href="http://news.mtime.com/2018/10/14/1585100.html" target="_blank" title="DC新版《小丑》曝全新纽约片场照 “小丑”杰昆菲尼克斯扮“小丑”泰然自若" class="imgbox" data-pan="M17_Index__News14_Img"><img src="http://img5.mtime.cn/mg/2018/10/14/111105.31744590.jpg" alt="DC新版《小丑》曝全新纽约片场照 “小丑”杰昆菲尼克斯扮“小丑”泰然自若" width="285" height="160"><i class="tag"></i><em class="picture">图集</em></a>
+                        <h3><a href="http://news.mtime.com/2018/10/14/1585100.html" target="_blank" data-pan="M17_Index__News14_Text">DC新版《小丑》曝全新纽约片场照</a></h3>
+                        <p class="describe">
+                            <a href="http://news.mtime.com/2018/10/14/1585100.html" target="_blank" data-pan="M17_Index__News14_Text">“小丑”杰昆菲尼克斯扮“小丑”泰然自若</a>
+                        </p>
+                    </div>
+                </dd>
+                <dd>
+                    <div class="newsitem">
+                        <a href="http://news.mtime.com/2018/10/14/1585098.html" target="_blank" title="速激导演新作《飓风奇劫》定档11.2 “飓风营救”玛姬格蕾丝主演 卡车被卷上天" class="imgbox" data-pan="M17_Index__News15_Img"><img src="http://img5.mtime.cn/mg/2018/10/14/110904.52365332.jpg" alt="速激导演新作《飓风奇劫》定档11.2 “飓风营救”玛姬格蕾丝主演 卡车被卷上天" width="285" height="160"><i class="tag"></i><em class="video">视频</em></a>
+                        <h3><a href="http://news.mtime.com/2018/10/14/1585098.html" target="_blank" data-pan="M17_Index__News15_Text">速激导演新作《飓风奇劫》定档11.2</a></h3>
+                        <p class="describe">
+                            <a href="http://news.mtime.com/2018/10/14/1585098.html" target="_blank" data-pan="M17_Index__News15_Text">“飓风营救”玛姬格蕾丝主演 卡车被卷上天</a>
+                        </p>
+                    </div>
+                </dd>
+                <dd>
+                    <div class="newsitem">
+                        <a href="http://news.mtime.com/2018/10/14/1585101.html" target="_blank" title="《登月第一人》周五首映开局不利 586万美元仅列第三 &quot;毒液&quot;蝉联票房冠军" class="imgbox" data-pan="M17_Index__News16_Img"><img src="http://img5.mtime.cn/mg/2018/10/14/110319.69586292.jpg" alt="《登月第一人》周五首映开局不利 586万美元仅列第三 &quot;毒液&quot;蝉联票房冠军" width="285" height="160"><i class="tag"></i></a>
+                        <h3><a href="http://news.mtime.com/2018/10/14/1585101.html" target="_blank" data-pan="M17_Index__News16_Text">《登月第一人》周五首映开局不利</a></h3>
+                        <p class="describe">
+                            <a href="http://news.mtime.com/2018/10/14/1585101.html" target="_blank" data-pan="M17_Index__News16_Text">586万美元仅列第三 "毒液"蝉联票房冠军</a>
+                        </p>
+                    </div>
+                </dd>
+            </dl>
+            <div class="livepart" id="hotlivebox">
+                <a href="http://live.mtime.com/?liveId=892" class="imgbox livetop" target="_blank" title="《影》“水墨杀场”红毯" data-pan="M17_live_mainRecommendation"><img src="http://img5.mtime.cn/mg/2018/09/25/192549.37141503.jpg" alt="《影》“水墨杀场”红毯" width="285" height="160"><i class="tag">直播回放</i><em class="video">视频</em></a>
+                <a href="http://live.mtime.com/?liveId=892" class="livetop" target="_blank" data-pan="M17_live_mainRecommendation">
+                    <h3>《影》“水墨杀场”红毯</h3></a>
+                <h2>更多直播</h2>
+                <dl class="livelist fix">
+                    <dd data-hotlive-listid="891"><i class="icon"></i>
+                        <div class="hotlivebtnbox fix" data-ctrl="hotlivebtn">
+                            <a class="tit" href="http://live.mtime.com/?liveId=891" target="_blank" title="《影》“水墨杀场”首映礼" data-pan="M17_liveTrailer_hf_1">《影》“水墨杀场”首映礼</a>
+                            <a href="http://live.mtime.com/?liveId=891" target="_blank" class="hotlivebtn" data-yy="true" data-liveid="891" data-staid="4" data-pan="M17_liveTrailer_hf_1">回放</a>
+                        </div>
+                        <p class="txt">2018年09月27日<span data-txt="hotlive"></span></p>
+                    </dd>
+                    <dd data-hotlive-listid="890"><i class="icon"></i>
+                        <div class="hotlivebtnbox fix" data-ctrl="hotlivebtn">
+                            <a class="tit" href="http://live.mtime.com/?liveId=890" target="_blank" title="《胖子行动队》红毯" data-pan="M17_liveTrailer_hf_2">《胖子行动队》红毯</a>
+                            <a href="http://live.mtime.com/?liveId=890" target="_blank" class="hotlivebtn" data-yy="true" data-liveid="890" data-staid="4" data-pan="M17_liveTrailer_hf_2">回放</a>
+                        </div>
+                        <p class="txt">2018年09月26日<span data-txt="hotlive"></span></p>
+                    </dd>
+                    <dd data-hotlive-listid="889"><i class="icon"></i>
+                        <div class="hotlivebtnbox fix" data-ctrl="hotlivebtn">
+                            <a class="tit" href="http://live.mtime.com/?liveId=889" target="_blank" title="《胖子行动队》发布会" data-pan="M17_liveTrailer_hf_3">《胖子行动队》发布会</a>
+                            <a href="http://live.mtime.com/?liveId=889" target="_blank" class="hotlivebtn" data-yy="true" data-liveid="889" data-staid="4" data-pan="M17_liveTrailer_hf_3">回放</a>
+                        </div>
+                        <p class="txt">2018年09月26日<span data-txt="hotlive"></span></p>
+                    </dd>
+                    <dd data-hotlive="true"><i class="icon"></i>
+                        <div class="hotlivebtnbox fix" data-ctrl="hotlivebtn">
+                            <a class="tit" href="http://live.mtime.com/" target="_blank" title="查看更多" data-pan="M17_liveTrailer_more">&nbsp;查看更多 &gt;</a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <p class="viewmore">
+            <a href="http://news.mtime.com/" data-pan="M17_Index_Today_More">查看更多</a>
+        </p>
+    </div>
+    <img class="adv" src="img/adv.jpg" alt="advs">
+    <div class="Main">
+        <div class="Main_tab">
+            <div class="tab_btn" id="saling">
+                正在售票<span>22</span>部
+            </div>
+            <div class="tab_btn" id="coming">
+                即将上映<span>59</span>部
+            </div>
+        </div>
+        <div class="salingmovies">
+            <ul class="salinglist">
+                <!--400*320-->
+                <li class="first">
+                    <img src="img/post3.png" alt="">
+                    <div class="title">无双</div>
+                    <div class="time"><span class="time_time">9月30日上映</span> - <span class="time_type">动作/犯罪</span>
+                    </div>
+                    <div class="length">129分钟</div>
+                    <div class="dis"><span class="dis_head">“ </span><span class="dis_text">周润发郭富城联手“钞级大骗”</span></div>
+                    <div class="btn_buy">选座购票</div>
+
+                </li>
+                <!--150*320-->
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="others">
+                    <img src="img/post3.png" alt="">
+
+
+                    <div class="movie_title">影</div>
+                    <div class="btn_buy">选座购票</div>
+                    <div class="cover_info">
+                        <p class="salingtime">9月30日上映</p>
+                        <p class="salingtype">动作/剧情</p>
+                        <p class="salinglength">115分钟</p>
+                        <p class="salingdis"><span class="salingdis_head">“</span><span class="salingdis_text">张艺谋新作，展现不一样的水墨风</span>
+                        </p>
+                    </div>
+                </li>
+
+
+            </ul>
+            <div class="btn_list">
+                <span class="prev_list"><</span>
+                <span class="next_list">></span>
+            </div>
+        </div>
+        <div class="comingmovies">
+            <ul class="cominglist">
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+                <li>
+                    <div class="comingtime">9月30日</div>
+                    <img src="img/post3.png" alt="">
+                    <div class="comingtitle">影</div>
+                    <div class="comingtype">剧情/动作</div>
+                    <div class="director">张艺谋</div>
+                    <div class="comingbuy">超前预售</div>
+                </li>
+
+            </ul>
+            <div class="btn_coming">
+                <span class="prev_coming"><</span>
+                <span class="next_coming">></span>
+            </div>
+        </div>
+        <a class="readmore" href="http://theater.mtime.com/China_Jiangsu_Province_Zhenjiang/" target="_blank">查看更多</a>
+    </div>
+    <img class="adv" src="img/adv1.jpg" alt="advs">
+    <div class="indexstruct fix movielist" data-plugin="imgLoad">
+        <div class="mlist">
+            <div class="fix">
+                <a href="./list.html" class="titmore" target="_blank"
+                   data-pan="M17_Index_Rank_List_More">更多 <i class="gt"></i></a>
+                <h4>特色榜单</h4></div>
+            <div>
+                <ul>
+                    <li>
+                        <dl class="mlistpic fix">
+                            <dt><a href="http://movie.mtime.com/list/1511.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_1"><img
+                                    src="http://img5.mtime.cn/mg/2018/10/12/163249.20967926.jpg" width="280"
+                                    height="200" alt="电影中的高智商玩家"></a></dt>
+                            <dd>
+                                <a href="http://movie.mtime.com/list/1511.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_1"><img
+                                        src="http://img5.mtime.cn/mg/2018/10/12/163351.18517676.jpg" width="138"
+                                        height="99" alt="电影中的高智商玩家"></a>
+                            </dd>
+                            <dd>
+                                <a href="http://movie.mtime.com/list/1511.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_1"><img
+                                        src="http://img5.mtime.cn/mg/2018/10/12/163418.54437569.jpg" width="138"
+                                        height="99" alt="电影中的高智商玩家"><span></span><strong><i>10</i>部电影 &gt;</strong></a>
+                            </dd>
+                        </dl>
+                        <h3><a href="http://movie.mtime.com/list/1511.html" target="_blank"
+                               data-pan="M17_Index_Rank_List_1">电影中的高智商玩家</a></h3></li>
+                    <li>
+                        <dl class="mlistpic fix">
+                            <dt><a href="http://movie.mtime.com/list/1512.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_2"><img
+                                    src="http://img5.mtime.cn/mg/2018/10/12/164648.51358617.jpg" width="280"
+                                    height="200" alt="张艺谋导演高分电影Top10"></a></dt>
+                            <dd>
+                                <a href="http://movie.mtime.com/list/1512.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_2"><img
+                                        src="http://img5.mtime.cn/mg/2018/10/12/164810.13607301.jpg" width="138"
+                                        height="99" alt="张艺谋导演高分电影Top10"></a>
+                            </dd>
+                            <dd>
+                                <a href="http://movie.mtime.com/list/1512.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_2"><img
+                                        src="http://img5.mtime.cn/mg/2018/10/12/164920.11804449.jpg" width="138"
+                                        height="99" alt="张艺谋导演高分电影Top10"><span></span><strong><i>10</i>部电影 &gt;</strong></a>
+                            </dd>
+                        </dl>
+                        <h3><a href="http://movie.mtime.com/list/1512.html" target="_blank"
+                               data-pan="M17_Index_Rank_List_2">张艺谋导演高分电影Top10</a></h3></li>
+                    <li>
+                        <dl class="mlistpic fix">
+                            <dt><a href="http://movie.mtime.com/list/1510.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_3"><img
+                                    src="http://img5.mtime.cn/mg/2018/09/20/101643.19294045.jpg" width="280"
+                                    height="200" alt="尼古拉斯·凯奇高分必看影片"></a></dt>
+                            <dd>
+                                <a href="http://movie.mtime.com/list/1510.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_3"><img
+                                        src="http://img5.mtime.cn/mg/2018/09/20/101231.16914206.jpg" width="138"
+                                        height="99" alt="尼古拉斯·凯奇高分必看影片"></a>
+                            </dd>
+                            <dd>
+                                <a href="http://movie.mtime.com/list/1510.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_3"><img
+                                        src="http://img5.mtime.cn/mg/2018/09/20/101311.93745286.jpg" width="138"
+                                        height="99" alt="尼古拉斯·凯奇高分必看影片"><span></span><strong><i>20</i>部电影 &gt;</strong></a>
+                            </dd>
+                        </dl>
+                        <h3><a href="http://movie.mtime.com/list/1510.html" target="_blank"
+                               data-pan="M17_Index_Rank_List_3">尼古拉斯·凯奇高分必看影片</a></h3></li>
+                    <li>
+                        <dl class="mlistpic fix">
+                            <dt><a href="http://movie.mtime.com/list/1507.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_4"><img
+                                    src="http://img5.mtime.cn/mg/2018/09/14/141113.57609319.jpg" width="280"
+                                    height="200" alt="古天乐时光网7分以上影片"></a></dt>
+                            <dd>
+                                <a href="http://movie.mtime.com/list/1507.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_4"><img
+                                        src="http://img5.mtime.cn/mg/2018/09/14/141231.24072268.jpg" width="138"
+                                        height="99" alt="古天乐时光网7分以上影片"></a>
+                            </dd>
+                            <dd>
+                                <a href="http://movie.mtime.com/list/1507.html" target="_blank"
+                                   data-pan="M17_Index_Rank_List_4"><img
+                                        src="http://img5.mtime.cn/mg/2018/09/14/141331.57937211.jpg" width="138"
+                                        height="99" alt="古天乐时光网7分以上影片"><span></span><strong><i>24</i>部电影
+                                    &gt;</strong></a>
+                            </dd>
+                        </dl>
+                        <h3><a href="http://movie.mtime.com/list/1507.html" target="_blank"
+                               data-pan="M17_Index_Rank_List_4">古天乐时光网7分以上影片</a></h3></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mboxoffice" id="rank-list" data-plugin="imgLoad">
+            <h4>电影票房</h4>
+            <dl class="mboxofficetab fix" data-plugin="tab-nav">
+                <dd class="cur"><span>内地</span></dd>
+                <dd><span>北美</span></dd>
+                <dd><span>全球</span></dd>
+            </dl>
+            <div class="tab-content">
+                <div class="active-txt">
+                    <ul>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>01</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/225752/" target="_blank"
+                                       title="无双/Project Gutenberg(2018)" data-pan="M17_Index_Rank_rank_1_1"><img
+                                            src="http://img5.mtime.cn/mt/2018/09/25/113254.40208555_185X277X4.jpg"
+                                            width="80" height="120" alt="无双/Project Gutenberg(2018)"></a><i
+                                        class="moviegrade">7.8</i></dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/225752/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_1_1">无双</a></h3>
+                                    <p>日票房：2818.9万</p>
+                                    <p>累计：8.25亿</p>
+                                    <p>单位：元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>02</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/250829/" target="_blank"
+                                       title="找到你/Lost, Found(2018)" data-pan="M17_Index_Rank_rank_1_2"><img
+                                            src="http://img5.mtime.cn/mt/2018/09/18/171005.34108810_185X277X4.jpg"
+                                            width="80" height="120" alt="找到你/Lost, Found(2018)"></a><i
+                                        class="moviegrade">7.6</i></dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/250829/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_1_2">找到你</a></h3>
+                                    <p>日票房：1137.9万</p>
+                                    <p>累计：1.09亿</p>
+                                    <p>单位：元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>03</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/242119/" target="_blank" title="影/Shadow(2018)"
+                                       data-pan="M17_Index_Rank_rank_1_3"><img
+                                            src="http://img5.mtime.cn/mt/2018/09/12/151650.31852299_185X277X4.jpg"
+                                            width="80" height="120" alt="影/Shadow(2018)"></a><i
+                                        class="moviegrade">7.5</i></dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/242119/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_1_3">影</a></h3>
+                                    <p>日票房：984.4万</p>
+                                    <p>累计：5.11亿</p>
+                                    <p>单位：元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <p class="tr">
+                        <a href="http://movie.mtime.com/boxoffice/#CN/daily" target="_blank"
+                           data-pan="M17_Index_Rank_rank_1_More">更多 <i class="gt"></i></a>
+                    </p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>01</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/103937/" target="_blank"
+                                       title="毒液：致命守护者/Venom(2018)" data-pan="M17_Index_Rank_rank_2_1"><img
+                                            src="http://img5.mtime.cn/mt/2018/09/18/093812.35476932_185X277X4.jpg"
+                                            width="80" height="120" alt="毒液：致命守护者/Venom(2018)"></a><i
+                                        class="moviegrade">7.5</i></dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/103937/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_2_1">毒液：致命守护者</a></h3>
+                                    <p>周末票房：8003.0万</p>
+                                    <p>累计：8003.0万</p>
+                                    <p>单位：美元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>02</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/142877/" target="_blank"
+                                       title="一个明星的诞生/A Star Is Born(2018)" data-pan="M17_Index_Rank_rank_2_2"><img
+                                            src="http://img5.mtime.cn/mt/2018/06/07/073125.84720540_185X277X4.jpg"
+                                            width="80" height="120" alt="一个明星的诞生/A Star Is Born(2018)"></a>
+                                </dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/142877/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_2_2">一个明星的诞生</a></h3>
+                                    <p>周末票房：4125.0万</p>
+                                    <p>累计：4260.0万</p>
+                                    <p>单位：美元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>03</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/251866/" target="_blank"
+                                       title="雪怪大冒险/Smallfoot(2018)" data-pan="M17_Index_Rank_rank_2_3"><img
+                                            src="http://img5.mtime.cn/mt/2018/09/30/153647.85396352_185X277X4.jpg"
+                                            width="80" height="120" alt="雪怪大冒险/Smallfoot(2018)"></a>
+                                </dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/251866/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_2_3">雪怪大冒险</a></h3>
+                                    <p>周末票房：1490.0万</p>
+                                    <p>累计：4276.1万</p>
+                                    <p>单位：美元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <p class="tr">
+                        <a href="http://movie.mtime.com/boxoffice/#US/weekend" target="_blank"
+                           data-pan="M17_Index_Rank_rank_2_More">更多 <i class="gt"></i></a>
+                    </p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>01</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/103937/" target="_blank"
+                                       title="毒液：致命守护者/Venom(2018)" data-pan="M17_Index_Rank_rank_3_1"><img
+                                            src="http://img5.mtime.cn/mt/2018/09/18/093812.35476932_185X277X4.jpg"
+                                            width="80" height="120" alt="毒液：致命守护者/Venom(2018)"></a><i
+                                        class="moviegrade">7.5</i></dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/103937/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_3_1">毒液：致命守护者</a></h3>
+                                    <p>周末票房：2.05亿</p>
+                                    <p>累计：2.05亿</p>
+                                    <p>单位：美元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>02</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/142877/" target="_blank"
+                                       title="一个明星的诞生/A Star Is Born(2018)" data-pan="M17_Index_Rank_rank_3_2"><img
+                                            src="http://img5.mtime.cn/mt/2018/06/07/073125.84720540_185X277X4.jpg"
+                                            width="80" height="120" alt="一个明星的诞生/A Star Is Born(2018)"></a>
+                                </dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/142877/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_3_2">一个明星的诞生</a></h3>
+                                    <p>周末票房：5525.0万</p>
+                                    <p>累计：5660.0万</p>
+                                    <p>单位：美元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="fix">
+                            <dl class="mboxofficerank">
+                                <dt>03</dt>
+                                <dd class="moviepic">
+                                    <a href="http://movie.mtime.com/225752/" target="_blank"
+                                       title="无双/Project Gutenberg(2018)" data-pan="M17_Index_Rank_rank_3_3"><img
+                                            src="http://img5.mtime.cn/mt/2018/09/25/113254.40208555_185X277X4.jpg"
+                                            width="80" height="120" alt="无双/Project Gutenberg(2018)"></a><i
+                                        class="moviegrade">7.9</i></dd>
+                                <dd class="text">
+                                    <h3><a href="http://movie.mtime.com/225752/" target="_blank"
+                                           data-pan="M17_Index_Rank_rank_3_3">无双</a></h3>
+                                    <p>周末票房：3800.0万</p>
+                                    <p>累计：9849.3万</p>
+                                    <p>单位：美元</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <p class="tr">
+                        <a href="http://movie.mtime.com/boxoffice/#world/weekend" target="_blank"
+                           data-pan="M17_Index_Rank_rank_3_More">更多 <i class="gt"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page_moviedetail" id="pageMovieDetail">
+    <div class="bg_body">
+        <div id="back_btn"><</div>
+    </div>
+    <div class="db_shadow">
+        <div class="topcont">
+            <div id="db_head">
+                <div class="db_coverout">
+                    <div class="db_coverinner">
+                        <div class="db_coverpicbox">
+                            <div class="db_cover_pic">
+                                <a href="">
+                                    <img src="http://img5.mtime.cn/mg/2018/09/25/113254.58940878_270X405X4.jpg"
+                                         alt="无双（2018）" rel="v:image">
+                                </a>
+
+                                <span class="bg">&nbsp;</span>
+                                <div class="db_wsticket">
+                                    <div>
+                                        <div class="ticket_tit">
+                                            <b class="tit_c">今日12家影院</b>
+                                            <br>
+                                            <b class="tit_t">上映386场次</b>
+                                        </div>
+                                        <div class="ticket_price">
+                                            <strong>32</strong>
+                                            元起
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <a href="#"
+                                           class="btn_ticket">选座购票</a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <dl class="db_theaterlist" id="coverTheaters">
+                                <dd><span class="fr">34元起</span><a target="_blank"
+                                                                   href="http://theater.mtime.com/China_Jiangsu_Province_Zhenjiang/movie/225752/?district=-1&cinema=3352">金逸影城（镇江常发店）</a>
+                                </dd>
+                                <dd><span class="fr">32元起</span><a target="_blank"
+                                                                   href="http://theater.mtime.com/China_Jiangsu_Province_Zhenjiang/movie/225752/?district=-1&cinema=2822">镇江万达广场店</a>
+                                </dd>
+                                <dd><span class="fr">33元起</span><a target="_blank"
+                                                                   href="http://theater.mtime.com/China_Jiangsu_Province_Zhenjiang/movie/225752/?district=-1&cinema=8645">镇江苏宁影城</a>
+                                </dd>
+                                <dd><span class="fr">33元起</span><a target="_blank"
+                                                                   href="http://theater.mtime.com/China_Jiangsu_Province_Zhenjiang/movie/225752/?district=-1&cinema=3766">横店电影城（镇江恒顺店）</a>
+                                </dd>
+                                <dt class="tr mt9">
+                                    <a class="__r_c"
+                                       href="http://theater.mtime.com/China_Jiangsu_Province_Zhenjiang/movie/225752/">
+                                        12家影院在线售票&nbsp;
+                                        <i class="gt"></i>
+                                    </a>
+                                </dt>
+                            </dl>
+                        </div>
+                        <p class="mt20 mr12 tr c_a5">
+                            <a class="c_a5 __r_c" href="http://movie.mtime.com/225752/addmovieinfo.html">添加资料</a>
+                            |
+                            <a class="c_a5 __r_c" href="http://movie.mtime.com/225752/addimage.html">添加图片</a>
+                            |
+                            <a class="c_a5 __r_c" href="http://my.mtime.com/ErrorReport/?type=1/">报错</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="db_ihead">
+                    <div class="db_head">
+                        <div class="clearfix">
+                            <h1 style="font-size:35px;" property="v:itemreviewed">无双</h1>
+                            <p class="db_enname" style="font-size:25px;">Project Gutenberg</p>
+                        </div>
+                        <div class="otherbox __r_c_">
+                            <span class="mins">129分钟</span>
+                            <span class="typeandtime"> - 犯罪 - 动作 - 2018年9月30日 </span>
+                            <span>中国上映-</span>
+                            <span class="result">3D/IMAX/中国巨幕</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="db_nav">
+                <div class="movieNavigationRegion">
+                    <dd class="__r_c1">
+                        <a href="#"><span class="video_count">16</span>个视频</a>
+                        <i>&nbsp;</i>
+                    </dd>
+                    <dd class="__r_c1"><a id="btn_1" href="#"><span class="pic_count">103</span>张图片</a>
+                        <i>&nbsp;</i>
+                    </dd>
+                    <dd class="__r_c1"><a id="btn_2" href="#"><span class="member_count">19</span>位演职员</a>
+                        <i>&nbsp;</i>
+                    </dd>
+                    <dd class="__r_c1"><a id="btn_3" href="#"><span>999+</span>条影评</a>
+                        <i>&nbsp;</i>
+                    </dd>
+                    <dd class="__r_c1"><a href="#"><span>--</span>条新闻</a>
+                        <i>&nbsp;</i>
+                    </dd>
+                    <dt class="more" id="detailMenuRegion">
+                        <a href="javascript:void(0);" class="__r_c1">更多<em id="detailMenuRegionLabel">&nbsp;</em></a>
+                        <i>&nbsp;</i>
+                        <dl class="db_nav_sel" id="detailSubMenuRegion" style="height: 187px;">
+                            <dt>&nbsp;</dt>
+                            <dd class="__r_c2"><a href="http://movie.mtime.com/225752/plots.html">剧情</a></dd>
+                            <dd class="__r_c2"><a href="###">角色介绍</a></dd>
+                            <dd class="__r_c2"><a href="http://movie.mtime.com/225752/behind_the_scene.html">幕后揭秘</a>
+                            </dd>
+                            <dd class="__r_c2"><a href="###">获奖记录</a></dd>
+                            <dd class="__r_c2"><a href="http://movie.mtime.com/225752/details.html">更多资料</a></dd>
+                        </dl>
+                    </dt>
+                </div>
+
+            </div>
+            <div class="grade_area news_area">
+                <div class="grade_clearfix">
+                    <div class="grade_tool">
+                        <div class="gradebox">
+                            <b><span class="num_pre">7</span><sup class="num_last">.9</sup></b>
+                            <p>总分:10</p>
+                        </div>
+                        <dl>
+                            <dt>
+                                <span id="rating">1840</span>
+                                人评分
+                                <span id="attitude">1253</span>
+                                人想看
+                            </dt>
+                            <dd class="yy">音乐<b><i style="width: 74%;"></i></b></dd>
+                            <dd class="hm">画面<b><i style="width: 74%;"></i></b></dd>
+                            <dd class="dy">导演<b><i style="width: 74%;"></i></b></dd>
+                            <dd class="gs">故事<b><i style="width: 74%;"></i></b></dd>
+                        </dl>
+                        <div class="grade_endtxt">
+                            <div class="fr grad_ellip">...</div>
+                            <span class="ticketCont">票房：7.62亿元</span>
+                        </div>
+                    </div>
+
+
+                    <div class="db_editScore">
+                        <div class="db_innerText">
+                            <div class="mpscore">
+                                <div class="mdlr">
+                                    <div class="mdr">
+                                        <div class="looktool">
+                                            <span class="mainScoreTxt">我要评分:</span>
+                                            <span class="score" style="display:none;">0.0</span>
+                                        </div>
+
+                                        <div class="per_totalarea01 ">
+                                            <div class="per_tip" style="display:none;"></div>
+                                            <a class="tooledit" pan="M14_Movie_Overview_UserBox_WantSee">想看</a>
+                                        </div>
+
+                                        <dl class="clearfix1 fl __r_c_">
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+                                            <dd class="off"><em></em></dd>
+
+                                        </dl>
+                                        <a class="morelink">分项</a>
+                                    </div>
+                                    <div class="per_message">
+                                        <p class="per_messagetxt"></p>
+                                        <textarea class="c_a5" id="tweetBoxUp"
+                                                  style="background-color: rgb(255, 255, 255); background-position: -620px 0px;">输入影评</textarea>
+                                    </div>
+                                    <div class="per_btn" id="divLongReviewOfUp">
+                                        <a href="http://my.mtime.com/app/blog/edit/movie/225752/">
+                                            <b class="ico_white"> </b>
+                                            <span>写长影评</span>
+                                        </a>
+                                        <span>|</span>
+                                        <a><b class="ico_add">&nbsp;</b>
+                                            <span>添加观影方式</span>
+                                        </a>
+                                        <i href="#"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="db_contout">
+                <div class="sharp"></div>
+                <div class="db_cont">
+                    <div class="base_r">
+                        <dl class="info_l">
+                            <dd class="info_c">
+                                <strong>导演:</strong>
+                                <a class="dir_name" href="http://people.mtime.com/893109/" target="_blank"
+                                   rel="v:directedBy">庄文强</a>
+                            </dd>
+                            <dd class="info_c">
+                                <strong>编剧:</strong>
+                                <a class="wri_name" href="http://people.mtime.com/893109/" target="_blank">--</a>
+                            </dd>
+                            <dd class="info_c">
+                                <strong>国家地区:</strong>
+                                <a class="area_name" href="http://movie.mtime.com/movie/search/section/?nation=China"
+                                   target="_blank"></a>
+                            </dd>
+                            <dd class="info_c">
+                                <strong>制作公司：</strong>
+                                <a href="http://movie.mtime.com/company/137678/" target="_blank">乐视影业</a>
+                                <a href="http://movie.mtime.com/225752/details.html#company" target="_blank">...</a>
+                            </dd>
+                            <dt class="info_c">
+                                <h4 class="pxx14">剧情:</h4>
+                                <p class="mt6 lh18" id="story">
+                                    《无双》讲述了以代号“画家”（周润发饰）为首的犯罪团伙，掌握了制造伪钞技术，难辨真伪，并在全球进行交易获取利益，引起警方高度重视。然而“画家”和其他成员的身份一直成谜，警方的破案进度遭受到了前所未有的挑战。在关键时刻，..</p>
+                                <p class="tr mt9"><a href="http://movie.mtime.com/225752/plots.html">更多剧情 <i
+                                        class="gt"></i></a></p>
+
+                            </dt>
+                        </dl>
+                        <div class="info_r">
+                            <h4 class="mt9">主演:</h4>
+                            <dl class="main_actor">
+                                <dd>
+                                    <img src=""
+                                         width="50" height="50" alt="暂无" class="per">
+                                    <p class="__r_c_ actor_name">
+                                        暂无
+                                    </p>
+                                    <p class="__r_c_ actor_nameEn">暂无</p>
+                                    <p class="__r_c_ ch">饰&nbsp;暂无</p>
+                                </dd>
+                            </dl>
+                            <dl class="main_actor">
+                                <dd>
+                                    <img src=""
+                                         width="50" height="50" alt="暂无" class="per">
+                                    <p class="__r_c_ actor_name">
+                                        暂无
+                                    </p>
+                                    <p class="__r_c_ actor_nameEn">暂无</p>
+                                    <p class="__r_c_ ch">饰&nbsp;暂无</p>
+                                </dd>
+                            </dl>
+                            <dl class="main_actor">
+                                <dd>
+                                    <img src=""
+                                         width="50" height="50" alt="暂无" class="per">
+                                    <p class="__r_c_ actor_name">
+                                        暂无
+                                    </p>
+                                    <p class="__r_c_ actor_nameEn">暂无</p>
+                                    <p class="__r_c_ ch">饰&nbsp;暂无</p>
+                                </dd>
+                            </dl>
+                            <dl class="main_actor">
+                                <dd>
+                                    <img src=""
+                                         width="50" height="50" alt="暂无" class="per">
+                                    <p class="__r_c_ actor_name">
+                                        暂无
+                                    </p>
+                                    <p class="__r_c_ actor_nameEn">暂无</p>
+                                    <p class="__r_c_ ch">饰&nbsp;暂无</p>
+                                </dd>
+                            </dl>
+                            <p class="tr mt15 px12 __r_c_" pan="M14_Movie_Overview_Actor_More">
+                                <a href="http://movie.mtime.com/225752/fullcredits.html">
+                                    更多
+                                    <i class="gt"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="endText">
+    <div class="JBlinear"></div>
+    <div class="footinner">
+        <div class="fot1">
+            <dl>
+                <dt>
+                    <a href="http://www.mtime.com" title="Mtime时光网">Mtime时光网</a>
+                </dt>
+                <dd class="fot1Txt">
+                    <a href="#">加入我们</a>
+                    <a href="#" class="txt2">联系我们</a>
+                </dd>
+                <dd class="fot1Txt">
+                    <a href="#">站务论坛</a>
+                    <a href="#" class="txt2">问题反馈</a>
+                </dd>
+                <dd class="fot1Txt">
+                    <a href="#">社区准则</a>
+                    <a href="#" class="txt2">网站地图</a>
+                </dd>
+                <dd class="fot1Txt">
+                    <a href="#">隐私政策</a>
+                    <a href="#" class="txt2">English</a>
+                </dd>
+
+            </dl>
+
+
+        </div>
+
+
+        <div class="fot2">
+            <dl style="width:42px;">
+                <dt>栏目</dt>
+                <dd>
+                    <a href="http://news.mtime.com/">新闻</a>
+                </dd>
+                <dd>
+                    <a href="http://theater.mtime.com/">影院</a>
+                </dd>
+                <dd>
+                    <a href="http://mall.mtime.com">商城</a>
+                </dd>
+                <dd>
+                    <a href="http://www.mtime.com/community/">社区</a>
+                </dd>
+            </dl>
+            <dl style="width:185px;">
+                <dt>推荐</dt>
+                <dd>
+                    <a href="http://movie.mtime.com/recent/">观影指南</a>
+                    <a href="http://movie.mtime.com/boxoffice/" class="ml30">电影票房</a>
+                </dd>
+                <dd>
+                    <a href="http://news.mtime.com/conversation/">时光对话</a>
+                    <a href="http://video.mtime.com/trailer/" class="ml30">新片预告</a>
+                </dd>
+                <dd>
+                    <a href="http://movie.mtime.com/all/list/index.html">特色榜单</a>
+                    <a href="http://my.mtime.com/app/quiz/" class="ml30">电影猜猜猜</a>
+                </dd>
+                <dd>
+                    <a href="http://news.mtime.com/fun/">全球拾趣</a>
+                    <a href="http://my.mtime.com/app/card/" class="ml30">卡片大富翁</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd>
+                    <a href="http://weibo.com/movietime?topnav=1&amp;wvr=5&amp;topsug=1" target="_blank" class="sina"
+                       title="新浪">新浪</a>
+                </dd>
+                <dd>
+                    <a id="aWeiXinPicButton" href="javascript:void(0)" class="weixin" title="微信">微信</a>
+                </dd>
+                <dd>
+                    <a href="http://www.mtime.com/rss/" target="_blank" class="rss" title="RSS">RSS</a>
+                </dd>
+            </dl>
+
+
+        </div>
+
+
+        <div class="fot3">
+            <dl>
+                <dt class="clearfix"><span class="fr">第213期</span><strong>时光周刊</strong></dt>
+                <dd>
+                    <a href="http://www.mtime.com/weekly/" target="_blank" title="时光周刊"><img
+                            src="http://img5.mtime.cn/mg/2018/09/14/162027.79343719.jpg" width="170" alt="时光周刊"></a>
+                </dd>
+                <dd class="input"><input id="iptEMail" type="text" value="邮箱地址" class="c_a5">
+                    <a id="btnSubscribe" href="javascript:void(0)">订阅</a>
+                </dd>
+            </dl>
+
+
+        </div>
+
+        <div class="fot4">
+            <dl>
+                <dt><strong>手机购票</strong> 方便 实惠</dt>
+                <dd>
+                    <a href="http://feature.mtime.com/mobile/" target="_blank"><i></i></a>
+                </dd>
+                <dd>扫描二维码 下载客户端</dd>
+            </dl>
+
+        </div>
+
+
+    </div>
+
+    <div class="foot">
+        <p>
+            <span class="mr12">北京动艺时光网络科技有限公司</span>
+            Copyright 2006-2018 Mtime.com Inc. All rights reserved.
+            <br>
+            <a href="http://feature.mtime.com/help/icp.htm" target="_blank" class="mr12 ml12">京ICP证050715号</a>
+            <a href="http://feature.mtime.com/help/videolicence.htm" target="_blank" class="mr12">网络视听许可证0108265号</a>
+            <a href="http://feature.mtime.com/help/network.htm" target="_blank" class="mr12">网络文化经营许可证</a>
+            <a href="http://feature.mtime.com/help/tvlicence.htm" target="_blank"
+               class="mr12">广播电视节目制作经营许可证(京)字第1435号</a>
+            <span>京公网安备：110105000744号</span>
+        </p>
+        <div class="credible">
+            <a href="http://feature.mtime.com/help/credible.htm" target="_blank" title="可信网站" class="credibler"></a>
+            <a href="http://feature.mtime.com/help/goodfaith.htm" target="_blank" title="诚信网站" class="goodfaith"></a>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="btn_r_c"></div>
+<div class="picurl_1"><i class="fa fa-angle-up" style="font-size: 40px;margin: 5px;text-align: center;" aria-hidden="true"></i></div>
+<div class="picurl_2"><i class="fa fa-angle-right" style="font-size: 40px;margin: 5px;" aria-hidden="true"></i></div>
+<div class="picurl_3"><i class="fa fa-angle-left" style="font-size: 40px;margin: 5px;" aria-hidden="true"></i></div>
+<div class="picurl_4"><i class="fa fa-angle-down" style="font-size: 40px;margin: 5px;" aria-hidden="true"></i></i></div>
+
+
+</body>
+
+</html>

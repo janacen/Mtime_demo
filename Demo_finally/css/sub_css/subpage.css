@@ -1,0 +1,469 @@
+body{
+    overflow-x: hidden;
+}
+
+.bord p {
+    width: 85px;
+    overflow: hidden;
+}
+
+.bord img {
+    width: 50px;
+    height: 50px;
+}
+
+.txt h3 {
+    width: 730px;
+    height: 43px;
+    overflow: hidden;
+}
+
+.subpage {
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 185px;
+    background-color: #127bab;
+}
+
+.textTop {
+    position: relative;
+    top: 60px;
+    left: 100px;
+
+    color: white;
+}
+
+.textTop h1 {
+    margin: 0;
+    display: inline;
+    color: white;
+}
+
+.content {
+    height: 90px;
+    overflow: hidden;
+}
+
+.textTop .db_year {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    color: white;
+}
+
+.textTop a {
+    text-decoration: none;
+    margin: 0;
+    color: white;
+}
+
+.moviePic {
+    background: url(//static1.mtime.cn/library/20180814141726/images/icon24.png) no-repeat 0 -649px;
+    width: 133px;
+    height: 132px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    font-size: 13px;
+    z-index: 10;
+    margin-left: 228px;
+    top: 70px;
+    padding: 14px 14px 14px 125px;
+    color: #fff;
+}
+
+.moviePic img {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+
+}
+
+.moviePic .price {
+    width: 120px;
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    color: #ff9300;
+    text-align: center;
+}
+
+.moviePic strong {
+    font-size: 50px;
+    line-height: 1em;
+    font-weight: normal;
+    color: #ff9300;
+}
+
+.moviePic .ticket {
+    background: #f77603;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    bottom: 25px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.db_scennav {
+    background: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    width: 100%;
+    box-shadow: 0 1px 3px #d3d3d3;
+    z-index: 4;
+    height: 45px;
+    margin: 0 100px;
+    position: absolute;
+    top: 186px;
+    left: 0;
+}
+
+.db_scennav dd {
+    position: relative;
+    zoom: 1;
+    float: left;
+    display: inline;
+    height: 45px;
+    text-align: center;
+    z-index: 2;
+    margin: 0;
+}
+
+.db_scennav dd a {
+    color: #333;
+    padding: 0 15px;
+    display: inline-block;
+    height: 45px;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 49px;
+    text-decoration: none;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.db_scennav .more {
+    background: url(//static1.mtime.cn/library/20180814141726/images/icon24.png) no-repeat -198px -45px;
+    width: 74px;
+    z-index: 7;
+    height: 37px;
+    float: left;
+    display: inline;
+    position: relative;
+    zoom: 1;
+    margin-top: 6px;
+    line-height: 37px;
+    margin-top: 6px;
+}
+
+.db_scennav .more a {
+    color: #333;
+    padding: 0 11px;
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.db_scennav .more em {
+    background-position: -68px -15px;
+}
+
+dt.more em {
+    overflow: hidden;
+    zoom: 1;
+    background: url(//static1.mtime.cn/library/20180814141726/images/icon24.png) no-repeat -86px -15px;
+    height: 32px;
+    width: 9px;
+    display: inline-block;
+
+    position: relative;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.db_scennav dd i {
+    background: url(//static1.mtime.cn/library/20180814141726/images/icon24.png) no-repeat -59px 0;
+    width: 21px;
+    height: 12px;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -4px;
+    display: none;
+}
+
+.db_nav_sel {
+    background: url(//static1.mtime.cn/library/20180814141726/images/icon24.png) no-repeat -150px -81px;
+    height: 187px;
+    width: 114px;
+    position: absolute;
+    top: 23px;
+    right: 0;
+    padding: 4px 4px;
+    overflow: hidden;
+    display: none;
+
+}
+
+.db_nav_sel dt {
+    display: none;
+}
+
+.db_nav_sel dd {
+    height: 35px;
+    position: relative;
+    z-index: 2;
+    float: none;
+    display: block;
+    border: 0;
+    margin-top: 0;
+    zoom: 1;
+    text-align: center;
+}
+
+.db_nav_sel dd a {
+    display: block;
+    padding: 0 30px;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    zoom: 1;
+    text-align: right;
+}
+
+.db_nav_sel dd a:hover {
+    background-color: #49B6FF;
+}
+
+.imageTitle {
+    position: absolute;
+    top: 231px;
+    left: 100px;
+    width: 1000px;
+    height: 83px;
+
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: 0 1px 3px #d3d3d3;
+}
+
+.imageTitle ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.imageTitle li {
+
+    height: 20px;
+    width: 107px;
+    font-size: 17px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    float: left;
+    margin-left: -1px;
+    border-left: 1px solid #cacaca;
+}
+
+.imageTitle ul li:nth-of-type(1) {
+    border-left: none;
+}
+
+.ImagesDiv {
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    top: 330px;
+    left: 100px;
+    display: block;
+}
+
+.ImagesDiv .JZ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 765px;
+
+}
+
+.JZ table tr th {
+    width: 240px;
+    height: 235px;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+}
+
+.ImagesDiv .HB {
+    position: absolute;
+    top: 790px;
+    left: 0;
+    width: 1000px;
+    height: auto;
+
+}
+
+.HB table tr th {
+    width: 235px;
+    height: 235px;
+
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+}
+
+.ImagesDiv .GZZ {
+    position: absolute;
+    top: 1330px;
+    left: 0;
+    width: 1000px;
+    height: 765px;
+
+}
+
+.GZZ table tr th {
+    width: 235px;
+    height: 235px;
+
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+}
+
+.fot1 dt a {
+
+    background: url(//static1.mtime.cn/20180730161010/images/2014/head.png) no-repeat 0 0;
+    width: 136px;
+    height: 44px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+
+}
+
+.fot1Txt a {
+    color: #333;
+    text-decoration: none;
+}
+
+.fot1 dl {
+    position: absolute;
+    top: 40px;
+    margin: 0;
+    padding: 0 20px;
+
+}
+
+.fot2 dl {
+    float: left;
+    margin: 0;
+    margin-left: 33px;
+
+    line-height: 2em;
+}
+
+.fot2 dl dd {
+    margin: 0;
+    font-size: 16px;
+    line-height: 2em;
+
+}
+
+.fot2 dl dt {
+    color: #333;
+}
+
+.fot2 dl dd a {
+
+    color: black;
+    text-decoration: none;
+}
+
+.fot3 dl {
+    margin: 0 29px;
+}
+
+.fot3 dl strong {
+    font-size: 18px;
+}
+
+.fot3 dd {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.fot3 .input a {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -9px;
+    width: 54px;
+    height: 25px;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+}
+
+.fot4 dl {
+    margin: 0;
+    text-align: center;
+}
+
+.fot4 dl dt {
+    color: #7d7d7d;
+}
+
+.fot4 dl dt strong {
+    color: #333;
+    font-size: 18px;
+}
+
+.fot4 dl dd {
+    margin: 0;
+    margin-top: 12px;
+}
+
+.fot4 dl dd a i {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -795px -9px;
+    width: 99px;
+    height: 99px;
+    margin: 0 auto;
+    display: block;
+}
+
+.foot p {
+    margin: 0;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.foot a {
+    color: #7e7e7f;
+    text-align: center;
+    text-decoration: none;
+}
+
+#top2 {
+    transform: translateY(200px);
+}
+
+.ImagesDiv img {
+    width: 240px;
+    height: 245px;
+}

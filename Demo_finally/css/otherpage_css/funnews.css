@@ -1,0 +1,475 @@
+body {
+    background-color: #fff!important;
+    font: 14px/150% helvetica,"微软雅黑","microsoft yahei",Verdana,Lucida,arial,sans-serif,"黑体";
+    position: relative;
+    display: block;
+    min-width: 1200px;
+    zoom: 1;
+}
+
+a, body {
+    color: #333;
+}
+.funnews {
+    padding: 30px 0;
+}
+.headslider, .indexstruct, .mselection {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body, dd, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, td, textarea, th, tr, ul {
+    margin: 0;
+    padding: 0;
+}
+h4.indextitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.funnews h4 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 22px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+.newslist {
+    overflow: hidden;
+}
+.newslist dl {
+    width: 1220px;
+}
+
+.block, .fix {
+    display: block;
+}
+.funnews .newslist dd {
+    padding-bottom: 33px;
+}
+
+.newslist dd {
+    width: 285px;
+    margin-right: 20px;
+    float: left;
+    padding-bottom: 23px;
+}
+.newsitem .imgbox {
+    position: relative;
+    display: block;
+}
+
+a {
+    vertical-align: baseline;
+    cursor: pointer;
+}
+.fotweek .input a, .mtimebar a:hover, a, a:hover {
+    text-decoration: none;
+}
+img {
+    background: url(../../images/autoimg.png) center no-repeat #f2f2f2;
+    background-size: 50% auto;
+    vertical-align: middle;
+}
+
+fieldset, img {
+    border: 0;
+}
+.newsitem .imgbox .tag {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 11px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+.normal, address, b, caption, cite, code, dfn, em, i, th, var {
+    font-weight: 400;
+    font-style: normal;
+}
+.newsitem h3 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+.newsitem h3 a {
+    display: block;
+}
+.actcont .actadd i, .actcont h3, .ciname-onnext .showbox h3 a, .hotcomments .commentsbox .commentsuser p a, .hotcomments .commentsbox h3, .hotcomments .commentsmod .describemovie a, .mboxofficerank h3 a, .movieselect .name .namebox, .newsitem .describe a, .newsitem h3 a, .selguide .mainguide span.moviename a, .seltrailer .videobox span strong, .seltrailer dt h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.newsitem .describe {
+    padding-top: 3px;
+}
+.newsitem .describe a {
+    color: #888;
+    display: block;
+}
+.fix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.viewmore {
+    text-align: center;
+    padding-top: 8px;
+}
+.viewmore a {
+    width: 158px;
+    line-height: 35px;
+    border: 1px solid #666;
+    color: #666;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.head {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #1e2836;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.head a {
+    padding: 0 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #c8c8c8;
+    float: left;
+}
+
+.head img {
+    margin-left: 100px;
+}
+
+.head a:hover {
+    color: #ffffff;
+}
+
+.title_area {
+    float: right;
+}
+
+.title_area a {
+    padding: 0 20px;
+}
+.endText {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.JBlinear {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(to right, yellow, blue);
+}
+
+.footinner {
+    position: absolute;
+    top: 4px;
+    width: auto;
+    height: 201px;
+    margin-left: 170px;
+    padding-top: 40px;
+
+    font-size: 13px;
+
+}
+
+.fot1 {
+    width: 200px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot2 {
+    width: 401px;
+    height: 157px;
+    float: left;
+    display: inline;
+
+}
+
+.fot3 {
+    width: 230px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot3 .clearfix{
+    position: relative;
+    width: auto;
+    height: auto;
+    transform: translate(0,-120%);
+}
+
+.fot4 {
+    width: 155px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot1 dt a {
+
+    background: url(//static1.mtime.cn/20180730161010/images/2014/head.png) no-repeat 0 0;
+    width: 136px;
+    height: 44px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+
+}
+
+.fot1Txt {
+    width: 160px;
+    height: 23px;
+    margin: 0;
+
+}
+
+.fot1Txt a {
+    color: #333;
+    text-decoration: none;
+}
+
+.fot1 dl {
+    position: absolute;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    padding: 0 20px;
+
+}
+
+.fot1 .txt2 {
+    margin-left: 30px;
+}
+
+.fot2 dl {
+    float: left;
+    margin: 0;
+    margin-left: 33px;
+
+    line-height: 2em;
+}
+
+.fot2 dl dd {
+    margin: 0;
+    font-size: 16px;
+    line-height: 2em;
+
+}
+
+.fot2 dl dt {
+    color: #333;
+}
+
+.fot2 dl dd a {
+    color: black;
+    text-decoration: none;
+}
+
+.fot2 .sina {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot2 .weixin {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    background-position: -170px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot2 .rss {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    background-position: -200px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot3 dl {
+    margin: 0 29px;
+}
+
+.fot3 dl strong {
+    font-size: 18px;
+}
+
+.fot3 dl .fr {
+    float: right;
+}
+
+.fot3 dd {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.fot3 .input {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -35px;
+    width: 163px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    padding-top: 1px;
+    border: 0px;
+}
+
+.fot3 .input #iptEMail {
+    background: transparent;
+    width: 100px;
+    text-align: center;
+    margin-left: 12px;
+    border: 0;
+    height: 22px;
+}
+
+.fot3 .input a {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -9px;
+    width: 54px;
+    height: 25px;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+}
+
+.fot4 dl {
+    margin: 0;
+    text-align: center;
+}
+
+.fot4 dl dt {
+    color: #7d7d7d;
+}
+
+.fot4 dl dt strong {
+    color: #333;
+    font-size: 18px;
+}
+
+.fot4 dl dd {
+    margin: 0;
+    margin-top: 12px;
+}
+
+.fot4 dl dd a i {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -795px -9px;
+    width: 99px;
+    height: 99px;
+    margin: 0 auto;
+    display: block;
+}
+
+.foot {
+    position: absolute;
+    top: 243px;
+    padding-left: 40px;
+    color: #7e7e7f;
+    text-align: center;
+    font-family: verdana, "宋体";
+
+    line-height: 2em;
+}
+
+.foot p {
+    margin: 0;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.mr12 {
+    margin-left: 12px;
+}
+
+.ml12 {
+    margin-right: 12px;
+}
+
+.foot a {
+    color: #7e7e7f;
+    text-align: center;
+    text-decoration: none;
+}
+
+.credible {
+    padding-top: 12px;
+    text-align: center;
+}
+
+.credibler {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/allicon.gif) no-repeat 0 0;
+    display: inline-block;
+    width: 68px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+    background-position: 0 -120px;
+}
+
+.goodfaith {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/allicon.gif) no-repeat 0 0;
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+    background-position: -68px -120px;
+    width: 70px
+}
+
+.db_scennav dd .image_btn {
+    color: white;
+    background-color: #004c7f;
+}

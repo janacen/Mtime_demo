@@ -1,0 +1,721 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.db_point .filmscore {
+    margin: 0;
+    padding: 0;
+
+    margin-right: 10px;
+    background-color: #679c21;
+    text-align: center;
+    margin-top: -5px;
+    width: 66px;
+    height: 66px;
+    color: white;
+    float: left;
+}
+
+.db_point ul {
+    list-style: none;
+}
+
+.db_point {
+
+}
+
+.filmscore {
+
+}
+
+.filmscore b {
+    padding: 7px 0 0;
+    display: inline-block;
+
+}
+
+.filmscore p {
+    font-size: 32px;
+}
+
+.filmtxt {
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.movieNavigationRegion span {
+    font-size: 16px;
+}
+
+.movieNavigationRegion .current {
+    background-color: white;
+
+}
+
+.movieNavigationRegion .current a {
+    color: #333;
+}
+
+.conmid {
+    position: absolute;
+    top: 220px;
+    left: 280px;
+}
+
+.othermenu {
+    height: 35px;
+    padding: 16px 0 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    zoom: 1;
+    z-index: 3;
+    color: #333;
+}
+
+.othertab li.first {
+    width: 135px;
+    margin-left: 5px;
+    position: relative;
+    zoom: 1;
+    cursor: pointer;
+}
+
+.othertab li {
+    line-height: 28px;
+    height: 28px;
+    float: left;
+    display: inline;
+    padding: 2px 10px 0;
+    margin-top: 0;
+    border-right: 1px solid #cecece;
+    font-size: 14px;
+}
+
+.othertab li.first .ico_f_jiao {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.ico_f_jiao {
+    background-image: url(//static1.mtime.cn/theater/20180927174355/images/cinema_public.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 12px;
+    height: 6px;
+    background-position: -52px -111px;
+    margin-left: 20px;
+}
+
+.clearfix {
+    margin: 0;
+}
+
+.ico_radio {
+    background: url(//static1.mtime.cn/theater/20180927174355/images/newfilm_ico.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-position: -15px 0;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.othermenu .citysearch {
+    width: 165px;
+
+}
+
+.citysearch {
+    width: 205px;
+    height: 30px;
+
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1) inset;
+    border-radius: 20px;
+    background: #f7f7f7;
+    padding: 0 8px;
+    position: absolute;
+    top: 27px;
+    left: 530px;
+}
+
+.othermenu .citysearch input.text {
+    width: 121px;
+}
+
+.citysearch input.text {
+    width: 170px;
+    height: 27px;
+    line-height: 27px;
+    background: 0;
+    margin: 0;
+    border-radius: 3px;
+    color: #d0d0d0;
+}
+
+.citysearch input {
+    display: inline-block;
+    vertical-align: top;
+    border: 0;
+    font-size: 14px;
+    margin: 0;
+}
+
+.othermenu .citysearch input.button {
+    background: url(//static1.mtime.cn/theater/20180927174355/images/newfilm_ico.png) no-repeat;
+    width: 34px;
+    height: 24px;
+    background-position: -66px -24px;
+    margin-top: 4px;
+
+}
+
+.mark_banner {
+    width: 690px;
+    font-size: 14px;
+    color: #696969;
+    text-align: center;
+    line-height: 32px;
+    background: #eaeaea;
+    height: 32px;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+.cinemaListRegion {
+    position: absolute;
+    top: 370px;
+    left: 350px;
+    width: 690px;
+}
+
+.movieinfobox {
+    margin: 0;
+}
+
+.movieinfobox dt {
+    font-size: 24px;
+}
+
+.movieinfobox p {
+    margin-top: 10px;
+}
+
+.movieinfobox dd {
+    margin: 0;
+}
+
+.moretool {
+    margin-top: 10px;
+}
+
+.moretool .ico_1 {
+    background-position: -50px -72px;
+}
+
+.moretool .ico_2 {
+    background-position: -100px -72px;
+}
+
+.moretool .ico_3 {
+    background-position: -377px -72px;
+    width: 24px;
+}
+
+.moretool .ico_4 {
+    background-position: -227px -72px;
+}
+
+.moretool .ico_5 {
+    background-position: 0 -97px;
+    width: 24px;
+}
+
+.moretool .ico_6 {
+    background-position: -60px -97px;
+    width: 24px;
+}
+
+.moretool .ico_7 {
+    background-position: -30px -97px;
+    width: 24px;
+}
+
+.moretool i {
+    margin: 0 3px 0 10px;
+    width: 48px;
+
+    display: inline-block;
+    vertical-align: middle;
+    background: url(//static1.mtime.cn/theater/20180927174355/images/infrastructure_icon.png) no-repeat;
+    border-radius: 3px;
+}
+
+.ticketselect {
+    width: 126px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    z-index: 2;
+
+}
+
+.ticketselect p {
+    text-align: center;
+    color: #f77603;
+    font-size: 30px;
+}
+
+.ticketselect .ticket_ico {
+    position: absolute;
+    width: 115px;
+    height: 32px;
+    font-size: 14px;
+    background: #0081bc;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.ticketselect span {
+    font-size: 24px;
+    vertical-align: middle;
+    padding: 0 0 0 5px;
+}
+
+.ticketselect p span {
+    font-size: 12px;
+    padding: 0 3px;
+}
+
+.cinemaListRegion_2 {
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    width: 690px;
+}
+
+.cinemaListRegion_3 {
+    position: absolute;
+    top: 630px;
+    left: 350px;
+    width: 690px;
+}
+
+.cinemaListRegion_4 {
+    position: absolute;
+    top: 760px;
+    left: 350px;
+    width: 690px;
+}
+
+.cinemaListRegion_5 {
+    position: absolute;
+    top: 890px;
+    left: 350px;
+    width: 690px;
+}
+
+.asider .moremovie h2 {
+    font-size: 16px;
+    color: #333;
+}
+
+.asider ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.asider li {
+    overflow: hidden;
+    zoom: 1;
+    margin: 20px 0 0;
+}
+
+.asider .picmid {
+    width: 100px;
+    position: relative;
+    margin-right: 10px;
+    zoom: 1;
+    float: left;
+}
+
+.asider .txtmid {
+    width: 180px;
+    float: left;
+}
+
+.txtmid h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.txtmid h2 span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    background: #679c21;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.txtmid .link {
+    padding-top: 15px;
+}
+
+.txtmid .link span {
+    color: #0087e2;
+}
+
+.endText {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.JBlinear {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    z-index: 10;
+
+    background: linear-gradient(to right, yellow, blue);
+}
+
+.footinner {
+    position: absolute;
+    top: 4px;
+    width: auto;
+    height: 201px;
+    margin-left: 170px;
+    padding-top: 40px;
+
+    font-size: 13px;
+
+}
+
+.fot1 {
+    width: 200px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot2 {
+    width: 401px;
+    height: 157px;
+    float: left;
+    display: inline;
+
+}
+
+.fot3 {
+    width: 230px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot3 .clearfix {
+    position: relative;
+    width: auto;
+    height: auto;
+    transform: translate(0, -120%);
+}
+
+.fot4 {
+    width: 155px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot1 dt a {
+
+    background: url(//static1.mtime.cn/20180730161010/images/2014/head.png) no-repeat 0 0;
+    width: 136px;
+    height: 44px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+
+}
+
+.fot1Txt {
+    width: 160px;
+    height: 23px;
+    margin: 0;
+
+}
+
+.fot1Txt a {
+    color: #333;
+    text-decoration: none;
+}
+
+.fot1 dl {
+    position: absolute;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    padding: 0 20px;
+
+}
+
+.fot1 .txt2 {
+    margin-left: 30px;
+}
+
+.fot2 dl {
+    float: left;
+    margin: 0;
+    margin-left: 33px;
+
+    line-height: 2em;
+}
+
+.fot2 dl dd {
+    margin: 0;
+    font-size: 16px;
+    line-height: 2em;
+
+}
+
+.fot2 dl dt {
+    color: #333;
+}
+
+.fot2 dl dd a {
+    color: black;
+    text-decoration: none;
+}
+
+.fot2 .sina {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot2 .weixin {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    background-position: -170px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot2 .rss {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    background-position: -200px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot3 dl {
+    margin: 0 29px;
+}
+
+.fot3 dl strong {
+    font-size: 18px;
+}
+
+.fot3 dl .fr {
+    float: right;
+}
+
+.fot3 dd {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.fot3 .input {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -35px;
+    width: 163px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    padding-top: 1px;
+    border: 0px;
+}
+
+.fot3 .input #iptEMail {
+    background: transparent;
+    width: 100px;
+    text-align: center;
+    margin-left: 12px;
+    border: 0;
+    height: 22px;
+}
+
+.fot3 .input a {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -9px;
+    width: 54px;
+    height: 25px;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+}
+
+.fot4 dl {
+    margin: 0;
+    text-align: center;
+}
+
+.fot4 dl dt {
+    color: #7d7d7d;
+}
+
+.fot4 dl dt strong {
+    color: #333;
+    font-size: 18px;
+}
+
+.fot4 dl dd {
+    margin: 0;
+    margin-top: 12px;
+}
+
+.fot4 dl dd a i {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -795px -9px;
+    width: 99px;
+    height: 99px;
+    margin: 0 auto;
+    display: block;
+}
+
+.foot {
+    position: absolute;
+    top: 243px;
+    padding-left: 40px;
+    color: #7e7e7f;
+    text-align: center;
+    font-family: verdana, "宋体";
+
+    line-height: 2em;
+}
+
+.foot p {
+    margin: 0;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.mr12 {
+    margin-left: 12px;
+}
+
+.ml12 {
+    margin-right: 12px;
+}
+
+.foot a {
+    color: #7e7e7f;
+    text-align: center;
+    text-decoration: none;
+}
+
+.credible {
+    padding-top: 12px;
+    text-align: center;
+}
+
+.credibler {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/allicon.gif) no-repeat 0 0;
+    display: inline-block;
+    width: 68px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+    background-position: 0 -120px;
+}
+
+.goodfaith {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/allicon.gif) no-repeat 0 0;
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+    background-position: -68px -120px;
+    width: 70px
+}
+
+.db_scennav dd .image_btn {
+    color: white;
+    background-color: #004c7f;
+}
+
+.head {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #1e2836;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.head a {
+    padding: 0 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #c8c8c8;
+    float: left;
+}
+
+.head img {
+    margin-left: 100px;
+}
+
+.head a:hover {
+    color: #ffffff;
+}
+
+.title_area {
+    float: right;
+}
+
+.title_area a {
+    padding: 0 20px;
+}

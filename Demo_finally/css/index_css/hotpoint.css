@@ -1,0 +1,266 @@
+body {
+     background-color: #fff!important;
+     font: 14px/150% helvetica,"微软雅黑","microsoft yahei",Verdana,Lucida,arial,sans-serif,"黑体";
+     position: relative;
+     display: block;
+     min-width: 1200px;
+     zoom: 1;
+ }
+a, body {
+    color: #333;
+}
+div {
+    display: block;
+}
+body, dd, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, td, textarea, th, tr, ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    vertical-align: baseline;
+    cursor: pointer;
+}
+.hotnews {
+    padding: 30px 0 10px;
+}
+
+.headslider, .indexstruct, .mselection {
+    width: 1200px;
+    margin: 0 auto;
+}
+.customtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+.customnav {
+    width: 1200px;
+    margin: 0 auto 19px;
+    position: relative;
+    text-align: center;
+}
+.customnav i {
+    background: #e5e5e5;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: 2px;
+}
+
+.normal, address, b, caption, cite, code, dfn, em, i, th, var {
+    font-weight: 400;
+    font-style: normal;
+}
+.customnav dd, .customnav dl {
+    background: #fff;
+    z-index: 2;
+    overflow: hidden;
+}
+.actcont .actadd i, .actcont .actbtn a, .actcont .acttime i, .actdot i, .categorynav h3 a, .categorynav i, .categorynav p a, .ciname-movie .mainmovie .mainmovieinfo p.combox i, .ciname-onnext .showtype .icovideo, .cinemamenu dd, .cinematip .alist a, .countdown em, .countdown i, .customnav dd, .customnav dl, .hotcomments .commentsbox .commentsuser p a, .hotcomments .commentsbox .commentsuser span, .hotcomments .commentsbox .describe i, .hotcomments .commentsmod .describe i, .hotcomments .commentsmod .describemovie a, .i_cityselect .icon_jtup, .i_cityselect .icon_position, .itemblock2 .tag i, .mboxofficetab dd span, .movieselect, .movieselect .name, .movieselect .name .namebox, .selcity_tiptit .cityletter a, .selguide .mainguide span.moviectrl .btnctrl, .selguide .mainguide span.movierank i, .tradercommend li h3 a, .tradercommend li p a {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+}
+.customnav dd {
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 1.1;
+    border-left: 1px solid #e5e5e5;
+    margin-left: -1px;
+}
+.customnav a {
+    position: relative;
+}
+
+.customnav a:hover{
+    color: #49b6ff;
+}
+.fotweek .input a, .mtimebar a:hover, a, a:hover {
+    text-decoration: none;
+}
+.newslist {
+    overflow: hidden;
+}
+.block, .fix {
+    display: block;
+}
+.newslist dl.newspart {
+    float: left;
+    width: 915px;
+}
+.newslist dl {
+    width: 1220px;
+}
+.newslist dd {
+    width: 285px;
+    margin-right: 20px;
+    float: left;
+    padding-bottom: 23px;
+}
+.newsitem .imgbox {
+    position: relative;
+    display: block;
+}
+img {
+    background: url(../../images/autoimg.png) center no-repeat #f2f2f2;
+    background-size: 50% auto;
+    vertical-align: middle;
+}
+fieldset, img {
+    border: 0;
+}
+.newsitem .imgbox .tag {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 11px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+.normal, address, b, caption, cite, code, dfn, em, i, th, var {
+    font-weight: 400;
+    font-style: normal;
+}
+.newsitem .imgbox .picture {
+    background: url(../../images/newspic.png) 0 -160px no-repeat;
+    width: 32px;
+    height: 24px;
+}
+.newsitem .imgbox .picture, .newsitem .imgbox .video {
+    background: url(../../images/index24.png) 0 -47px no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    font-size: 0;
+    line-height: 0;
+}
+.newsitem h3 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+.newsitem h3 a {
+    display: block;
+}
+.newsitem .describe {
+    padding-top: 3px;
+}
+.newsitem .describe a {
+    color: #888;
+    display: block;
+}
+.livepart {
+    float: left;
+    background: #f5f5f5;
+}
+.livepart .livetop {
+    position: relative;
+    display: block;
+    width: 285px;
+    font-size: 16px;
+}
+.livepart .video {
+    background: url(../../images/index24.png) 0 -47px no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    font-size: 0;
+    line-height: 0;
+}
+.livepart .livetop h3 {
+    padding: 10px 10px 0;
+    margin-bottom: 10px;
+    width: 264px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.livepart h2 {
+    font-size: 16px;
+    margin-left: 10px;
+}
+dl.livelist {
+    margin: 14px 0 20px 15px;
+    width: 270px;
+    height: 198px;
+}
+dl.livelist dd {
+    position: relative;
+    padding: 0 15px 6px 10px;
+    margin-right: 0;
+    width: auto;
+    height: 53px;
+    border-left: 1px solid #e6e6e6;
+    line-height: 100%;
+}
+dl.livelist dd .icon {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #267fd4;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+}
+.hotlivebtnbox {
+    margin-top: -4px;
+    width: 244px;
+}
+dl.livelist dd .tit {
+    float: left;
+    width: 177px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.hotlivebtn {
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 54px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #267fd4;
+    border-radius: 16px;
+    color: #267fd4;
+}
+.fix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+dl.livelist dd p.txt {
+    line-height: 150%;
+    color: #888;
+    font-size: 12px;
+}
+dl.livelist dd:last-child {
+    height: 21px;
+}
+dl.livelist dd:last-child .tit {
+    color: #666;
+}

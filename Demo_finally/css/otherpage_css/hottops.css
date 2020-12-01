@@ -1,0 +1,305 @@
+body {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/html_bg.jpg);
+    padding-bottom: 0;
+    font: 12px/150% helvetica,"微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+    color: #333;
+    min-width: 1200px;
+    zoom: 1;
+    padding-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+div {
+    display: block;
+}
+body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, form, fieldset, legend, input, textarea, th, tr, td, em {
+    margin: 0;
+    padding: 0;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+input, textarea {
+    font-family: "微软雅黑","microsoft yahei";
+    font-size: 12px;
+    padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+a {
+    color: #08c;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+ol, ul {
+    list-style: none;
+}
+/*公共部分*/
+
+.dis_hottop {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding-top: 1px;
+}
+/*整个div*/
+.dis_sectop {
+    background: #fff;
+    width: 1000px;
+    overflow: hidden;
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    margin-left: -500px;
+}
+/*选择板块*/
+/*.clearfix:after, .fix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}*/
+.clearfix, .fix {
+    display: inline-block;
+}
+.clearfix, .fix {
+    display: block;
+}
+.dis_hottab {
+    width: 964px;
+    margin: 0 auto;
+    padding: 30px 0 0;
+}
+/*制作tab切换*/
+/*.dis_searcher {
+    background: url(//static1.mtime.cn/library/20180814141726/images/dis_bg.jpg) no-repeat 0 -180px;
+    width: 289px;
+    height: 42px;
+    position: relative;
+    zoom: 1;
+    float: right;
+    top: 6px;
+}*/
+/*搜索框样式*/
+.c_666, a.c_666:hover {
+    color: #666;
+}
+.dis_searcher input {
+    width: 200px;
+    margin: 5px 0 0 20px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    padding: 0;
+    border: 0;
+}
+/*搜索框输入*/
+/*.dis_searcher a {
+    background: url(//static1.mtime.cn/library/20180814141726/images/dis_icon24.png) no-repeat -95px -180px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -7px;
+}*/
+/*<a>标签样式*/
+.dis_navtab {
+    font-size: 20px;
+    line-height: 1.2em;
+    color: #656565;
+    padding: 18px 0;
+}
+.dis_navtab a.on {
+    font-weight: bold;
+    color: #333;
+}
+/*选中者样式*/
+em {
+    font-style: normal;
+    font-weight: normal;
+}
+.dis_navtab em {
+    margin: 0 25px;
+}
+/*分隔符的样式*/
+.dis_navtab a {
+    color: #656565;
+}
+/*未选中者样式*/
+.dis_hottoper {
+    padding-bottom: 50px;
+}
+/*真正热门区*/
+.dis_hottoper dl {
+    width: 964px;
+    margin: 0 auto;
+}
+/*dl*/
+.dis_hottoper dt {
+    border-left: 7px solid #ff6e00;
+    font-size: 16px;
+    color: #333;
+    padding-left: 20px;
+    margin-top: 30px;
+    line-height: 1.6em;
+}
+/*dt*/
+.dis_hottoper dt h3 a {
+    font-size: 18px;
+    color: #333;
+}
+/*h3*/
+.mt10 {
+    margin-top: 10px;
+}
+/*文字部分*/
+.dis_hottoper ul {
+    margin-right: -15px;
+    padding-top: 25px;
+}
+/*ul*/
+.dis_hottoper li {
+    background: #fff;
+    width: 140px;
+    height: 300px;
+    padding: 3px;
+    float: left;
+    display: inline;
+    border: 1px solid #f5f5f5;
+    box-shadow: 1px 1px 1px #f1f1f1;
+    color: #7f7f7f;
+    margin-right: 15px;
+}
+/*li的样式  不完全*/
+.dis_hottoper li h3 {
+    padding: 6px 6px 0;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+}
+/*li中h3的样式*/
+.dis_hottoper li h3 a {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5em;
+}
+/*li中a的样式*/
+.mt6 {
+    margin-top: 6px;
+}
+.dis_hottoper li p {
+    padding: 1px 6px;
+    font-size: 13px;
+}
+
+.db_point {
+    background: #679c21;
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    zoom: 1;
+    padding: 4px 5px 4px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #fff;
+    vertical-align: bottom;
+    *vertical-align: middle;
+    _vertical-align: -1px;
+    overflow: hidden;
+}
+/*评分*/
+.mt15 {
+    margin-top: 15px;
+}
+.px14 {
+    font-size: 14px;
+}
+.tr {
+    text-align: right;
+}
+/*中间的间隔*/
+.pagenav {
+    text-align: center;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+/*下面的页面跳转*/
+
+.pagenav a {
+    font-size: 12px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 0 10px;
+    height: 25px;
+    border-radius: 3px;
+    color: #909090;
+    margin: 0 3px;
+    line-height: 26px;
+    font-family: helvetica,"微软雅黑","microsoft yahei";
+    border: 0;
+}
+.pagenav a {
+    font-size: 16px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 36px;
+    text-align: center;
+    height: 36px;
+    border-radius: 36px;
+    padding: 0;
+    color: #323232;
+    margin: 0 3px;
+    line-height: 36px;
+    font-family: helvetica,"微软雅黑","microsoft yahei";
+    border: 0;
+}
+.pagenav a.on, .pagenav a:hover {
+    background: #909090;
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+}
+.pagenav a.on, .pagenav a:hover {
+    background: #0096ff;
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+}
+.pagenav a.false {
+    display: none;
+}
+.pagenav a.next {
+    margin: 0 3px;
+    padding: 0 10px;
+    width: 60px;
+    font-size: 12px;
+}
+input, textarea {
+    font-family: "微软雅黑","microsoft yahei";
+    font-size: 12px;
+    padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}

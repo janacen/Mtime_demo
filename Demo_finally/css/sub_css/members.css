@@ -1,0 +1,162 @@
+.artists {
+    position: absolute;
+    top: 340px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-left: 100px;
+    display: none;
+    margin: 0;
+}
+
+.artists_cont {
+    overflow: hidden;
+
+}
+
+.credits1 {
+    width: 626px;
+    border-right: 1px solid #ccc;
+}
+
+.credits1 dl {
+    margin: 0;
+    padding: 0;
+}
+
+.actor_tit {
+    float: left;
+    display: inline;
+    width: 220px;
+    padding-right: 10px;
+}
+
+.character_tit {
+    float: left;
+    display: inline;
+    width: 285px;
+    padding-left: 88px;
+}
+
+.credits1 dt {
+    position: relative;
+    height: 50px;
+}
+
+.credits1 dt h4 {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    border-bottom: 2px solid #333;
+}
+
+.credits1 dd {
+    margin: 0;
+    font-size: 14px;
+    min-height: 60px;
+    margin-bottom: 10px;
+}
+
+.credits1 dd h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.credits1 dd p {
+    margin: 0;
+}
+
+.credits1 dd a {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.pic_1 {
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+    float: left;
+    padding-left: 75px;
+    padding-right: 10px;
+    width: 143px;
+    color: #08c;
+}
+
+.credits1 .text_1 {
+    position: relative;
+    display: inline;
+    width: 285px;
+    padding-left: 88px;
+    float: left;
+    zoom: 1;
+}
+
+.text_1 em {
+    position: absolute;
+    height: 1px;
+    left: 0;
+    width: 80%;
+    top: 50%;
+    border-bottom: 1px dotted #ccc;
+    z-index: 0;
+
+}
+
+.credits1 .character_inner {
+    position: relative;
+    z-index: 2;
+    padding-left: 15px;
+    color: #615f5e;
+    background: white;
+}
+
+.credits2 {
+    position: absolute;
+    top: 0;
+    left: 750px;
+    width: 300px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.credits_list {
+    line-height: 2.6em;
+    font-size: 14px;
+    color: #615f5e;
+    margin-bottom: 30px;
+}
+
+.credits_list h4 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    position: relative;
+    font-size: 14px;
+    zoom: 1;
+    color: #333;
+    display: inline-block;
+    border-bottom: 3px solid #333;
+}
+
+.credits_list p {
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.credits_list a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #08c;
+}
+
+/*底部/
+ *
+ */

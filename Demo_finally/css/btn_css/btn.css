@@ -1,0 +1,98 @@
+.btn_r_c{
+	position: fixed;
+	top: 13%;
+	right: 100px;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	box-shadow: 0 0 5px #333;
+	background-color: gainsboro;
+	z-index: 20;
+}
+.btn_r_c:hover{
+	cursor: pointer;
+}
+.picurl_1{
+	position: fixed;
+	
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	opacity: 0;
+	box-shadow: 0 0 5px #333;
+	border-radius: 30px;
+	z-index: 9;
+	transition:all 0.5s ease;
+}
+.fa-angle-up{
+	transform: translateX(30%);
+	
+}
+.fa-angle-down{
+	transform: translateX(30%);
+	
+}
+.fa-angle-left{
+	transform: translatex(90%);
+	
+}
+.fa-angle-right{
+	transform: translateX(90%);
+	
+}
+.picurl_2{
+	position: fixed;
+	top:50%;
+	
+	height: 30px;
+	background-color: white;
+	opacity: 0;
+	box-shadow: 0 0 5px #333;
+	border-radius: 30px;
+	z-index: 9;
+	transition:all 0.5s ease;
+}
+.picurl_3{
+	position: fixed;
+	
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	opacity: 0;
+	box-shadow: 0 0 5px #333;
+	border-radius: 30px;
+	z-index: 9;
+	transition:all 0.5s ease;
+}
+.picurl_4{
+	position: fixed;
+	
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	opacity: 0;
+	box-shadow: 0 0 5px #333;
+	border-radius: 30px;
+	z-index: 9;
+	transition:all 0.5s ease;
+}
+.picurl_1:hover{
+	cursor: pointer;
+	background-color: gainsboro;
+	color: white;
+}
+.picurl_2:hover{
+	cursor: pointer;
+	background-color: gainsboro;
+	color: white;
+}
+.picurl_3:hover{
+	cursor: pointer;
+	background-color: gainsboro;
+	color: white;
+}
+.picurl_4:hover{
+	cursor: pointer;
+	background-color: gainsboro;
+	color: white;
+}

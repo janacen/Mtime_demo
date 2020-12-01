@@ -1,0 +1,191 @@
+.YP{
+	position: absolute;
+	top: 220px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 100px;
+	display: none;
+	box-sizing: border-box;
+}
+.box{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	display: block;
+	margin-left: 100px;
+	
+}
+
+.YP_detail{
+	background: url(//static1.mtime.cn/library/20180814141726/images/info.png) no-repeat 0 2px;
+	width: 1000px;
+	height: 83px;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	
+	
+}
+.YP_detail ul{
+	list-style: none;
+	position: absolute;
+	left: 0;
+	padding: 0;
+}
+.YP_detail li{
+	position: relative;
+	float: left;
+	heigth:20px;
+	display: inline;
+	margin-top: 26px;
+}
+.YP_detail  .CYP{
+	border-right: 1px solid #838383;
+}
+.YP_detail li a{
+	padding: 0 25px;
+}
+.YP_detail .CYP a{
+	color: #333;
+}
+.YP_detail .WYP a{
+	color: #838383;
+}
+
+
+.WYP i{
+	display: none;
+}
+.YP_detail li i{
+	background: url(//static1.mtime.cn/library/20180814141726/images/icon.gif) no-repeat 0 -60px;
+    height: 13px;
+    width: 22px;
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    top: 40px;
+    }
+    
+    
+.box1{
+	width: 1000px;
+	height: 180px;
+	border-bottom: 1px dotted #838383;
+}
+.box1 dt{
+	margin: 0;
+	padding: 0;
+	background: #ff9600;
+    width: 67px;
+    height: 79px;
+    position: absolute;
+    left: -100px;
+    top: 35px;
+    padding: 6px 8px 0 0;
+    font-size: 18px;
+    line-height: 1.2em;
+    color: #fff;
+    text-align: right;
+}
+.box1 dt strong{
+	margin: 0;
+	padding: 0;
+	display: block;
+    margin-right: 5px;
+    font-size: 45px;
+    line-height: 1em;
+}
+.box1 .dt_2{
+	position: absolute;
+	top: 255px;
+	left: -100px;
+}
+.box1 .combox{
+	margin: 0;
+	padding: 0;
+	width: 700px;
+    float: left;
+    display: inline;
+    padding-right: 25px;
+    border-right: 1px solid #ccc;
+    line-height: 1.8em;
+    color: #999;
+}
+.combox h3 a{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	text-decoration: none;
+}
+.combox p{
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+ .cont p a{
+	color: #2f688c;
+}
+ a{
+	text-decoration: none;
+	
+}
+.combox  .gt{
+	background: url(//static1.mtime.cn/20180730161010/images/2014/allicon24.png) no-repeat -125px 0;
+    width: 11px;
+    height: 10px;
+    display: inline-block;
+    
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    
+    color: #2f688c;
+    font-size: .9em;
+    font-family: "宋体";
+    margin-left: 3px;
+}
+
+.box1 .pic{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+    float: right;
+    display: inline;
+    color: #999;
+    padding-left: 10px;
+}
+.box1 p{
+	margin: 0;
+}
+.box1 .pic_p{
+	margin: 0;
+	padding: 0;
+	margin-top: 9px;
+}
+.box1 .kanguo{
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+	font-size: 12px;
+}
+.kanguo .point{
+	margin: 0;
+	padding: 0;
+	margin-left: 12px;
+	background: #679c21;
+    display: inline-block;
+    
+    position: relative;
+    zoom: 1;
+    padding: 4px 5px 4px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #fff;
+    vertical-align: bottom;
+}
+ p a{
+	font-size: 12px;
+}

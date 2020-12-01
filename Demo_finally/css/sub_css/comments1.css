@@ -1,0 +1,138 @@
+.YP2{
+	position: relative;
+	top: 150px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 100px;
+	display: none;
+	box-sizing: border-box;
+}
+
+.box2{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	
+	
+}
+.box3{
+	
+	
+	position: relative;
+	margin: 0;
+	/*border-bottom: 1px dotted #838383;*/
+	
+}
+
+.bord{
+	margin-bottom: 30px;
+}
+.imgPic{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	margin-right: 0;
+	width: 160px;
+	border-right: 1px dotted #838383;
+}
+.imgPic .pic_head{
+	padding-left: 70px;
+	padding-top: 0;
+	position: relative;
+	
+}
+.pic_head img{
+	position: absolute;
+	border: 1px solid #c4c4c4;
+	left: 3px;
+	top: 0;
+}
+.pic_head p{
+	margin: 0;
+	padding: 0;
+}
+.pic_head .kanguo{
+	margin: 0;
+	margin-top: 6px;
+	font-size: 12px;
+}
+.kanguo .point{
+	margin: 0;
+	padding: 0;
+	margin-left: 12px;
+	background: #679c21;
+    display: inline-block;
+    
+    position: relative;
+    zoom: 1;
+    padding: 4px 5px 4px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #fff;
+    vertical-align: bottom;
+}
+.YP_time{
+	margin-top: 10px;
+}
+
+.YP_text{
+	position: absolute;
+	top: 0;
+	left: 170px;
+	width: 850px;
+	margin: 0;
+	padding: 0;
+	
+}
+.YP_text .txt h3{
+	margin: 0;
+	font-size: 14px;
+	color: #333;
+	font-family: monospace
+}
+.YP_text .docuBox{
+	margin-top: 5px;
+}
+.docuBox .textarea{
+	height: 30px;
+	border:1px solid #d6d6d6;
+	margin-right: 130px;
+}
+.docuBox .c_a5{
+	width: 100%;
+	background: transparent;
+    border: 0;
+    font-size: 13px;
+    line-height: 32px;
+    resize: none;
+    color: #878787;
+}
+.textarea .picbox{
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+ .picbox i{
+	background: url(//static1.mtime.cn/library/20180814141726/images/allicon24.png) no-repeat;
+    width: 17px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin-right: 3px;
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+.picbox .good{
+	background-position: -34px 0;
+}
+.picbox .share{
+	background-position: -17px 0;
+}
+.picbox .pinglun{
+	background-position: 0 0;
+}

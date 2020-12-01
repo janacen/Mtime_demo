@@ -1,0 +1,293 @@
+.endText {
+    position: absolute;
+    top: 2500px;
+    left: 0;
+    width: 100%;
+    height: 360px;
+}
+
+.JBlinear {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(to right, yellow, blue);
+}
+
+.footinner {
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 201px;
+    margin-left: 120px;
+    padding-top: 30px;
+
+    font-size: 13px;
+
+}
+
+.fot1 {
+    width: 200px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot2 {
+    width: 401px;
+    height: 157px;
+    float: left;
+    display: inline;
+
+}
+
+.fot3 {
+    width: 230px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot4 {
+    width: 155px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot1 dt a {
+
+    background: url(//static1.mtime.cn/20180730161010/images/2014/head.png) no-repeat 0 0;
+    width: 136px;
+    height: 44px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+
+}
+
+.fot1Txt {
+    width: 160px;
+    height: 23px;
+    margin: 0;
+
+}
+
+.fot1Txt a {
+    color: #333;
+    text-decoration: none;
+}
+
+.fot1 dl {
+    position: absolute;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    padding: 0 20px;
+
+}
+
+.fot1 .txt2 {
+    margin-left: 30px;
+}
+
+.fot2 dl {
+    float: left;
+    margin: 0;
+    margin-left: 33px;
+
+    line-height: 2em;
+}
+
+.fot2 dl dd {
+    margin: 0;
+    font-size: 16px;
+    line-height: 2em;
+
+}
+
+.fot2 dl dt {
+    color: #333;
+}
+
+.fot2 dl dd a {
+    color: black;
+    text-decoration: none;
+}
+
+.fot2 .sina {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot2 .weixin {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    background-position: -170px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot2 .rss {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    background-position: -200px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot3 dl {
+    margin: 0 29px;
+}
+
+.fot3 dl strong {
+    font-size: 18px;
+}
+
+.fot3 dl .fr {
+    float: right;
+}
+
+.fot3 dd {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.fot3 .input {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -35px;
+    width: 163px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    padding-top: 1px;
+}
+
+.fot3 .input #iptEMail {
+    background: transparent;
+    width: 100px;
+    text-align: center;
+    margin-left: 12px;
+    border: 0;
+    height: 22px;
+}
+
+.fot3 .input a {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -9px;
+    width: 54px;
+    height: 25px;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+}
+
+.fot4 dl {
+    margin: 0;
+    text-align: center;
+}
+
+.fot4 dl dt {
+    color: #7d7d7d;
+}
+
+.fot4 dl dt strong {
+    color: #333;
+    font-size: 18px;
+}
+
+.fot4 dl dd {
+    margin: 0;
+    margin-top: 12px;
+}
+
+.fot4 dl dd a i {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -795px -9px;
+    width: 99px;
+    height: 99px;
+    margin: 0 auto;
+    display: block;
+}
+
+.foot {
+    position: absolute;
+    top: 220px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    color: #7e7e7f;
+    text-align: center;
+    font-family: verdana, "宋体";
+
+    line-height: 2em;
+}
+
+.foot p {
+    margin: 0;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.mr12 {
+    margin-left: 12px;
+}
+
+.ml12 {
+    margin-right: 12px;
+}
+
+.foot a {
+    color: #7e7e7f;
+    text-align: center;
+    text-decoration: none;
+}
+
+.credible {
+    padding-top: 12px;
+    text-align: center;
+}
+
+.credibler {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/allicon.gif) no-repeat 0 0;
+    display: inline-block;
+    width: 68px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+    background-position: 0 -120px;
+}
+
+.goodfaith {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/allicon.gif) no-repeat 0 0;
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+    background-position: -68px -120px;
+    width: 70px
+}

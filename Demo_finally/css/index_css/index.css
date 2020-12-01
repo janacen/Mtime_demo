@@ -1,0 +1,788 @@
+body {
+    font-size: 0.95rem;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    min-width: 1300px;
+}
+
+.head {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #1e2836;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.head a {
+    padding: 0 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #c8c8c8;
+    float: left;
+}
+
+.head img {
+    margin-left: 100px;
+}
+
+.head a:hover {
+    color: #ffffff;
+}
+
+.title_area {
+    float: right;
+}
+
+.title_area a {
+    padding: 0 20px;
+}
+
+.search {
+    width: 100%;
+    line-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    float: left;
+    border: 1px solid lightgray;
+    margin: 22px auto;
+    border-right: 0px;
+
+}
+
+.type {
+    height: 30px;
+    color: gray;
+    border-radius: 20px 0px 0px 20px;
+    width: 60px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.searchmsg {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    padding: 0 5px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.search select {
+    border: 0px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(10%, 30%);
+    z-index: 10;
+}
+
+.icon {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 22px auto;
+    line-height: 38px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid lightgray;
+    text-align: center;
+    border-left: 0px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.icon:hover {
+    background-color: dodgerblue;
+}
+
+.icon .fa {
+    position: absolute;
+    transform: translate(-50%, 40%)
+}
+
+.adv {
+    margin: 10px 0px 20px 70px;
+}
+
+.Main {
+
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+}
+
+.Main_tab {
+    position: relative;
+    left: 70px;
+    top: 0px;
+    width: 1200px;
+    height: 50px;
+
+}
+
+.Main_tab > .tab_btn {
+    position: relative;
+    margin-left: 300px;
+    float: left;
+    width: 180px;
+    height: 50px;
+}
+
+.Main_tab > .tab_btn {
+    color: dimgrey;
+    font-size: 1.2rem;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.Main_tab > .tab_btn > span {
+    font-size: 1.8rem;
+}
+
+.Main_tab > .tab_btn:hover {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.salingmovies {
+    width: 1155px;
+    height: 270px;
+    /*background-color: darkgrey;*/
+    margin-left: 100px;
+    overflow: hidden;
+    border-top: 1px solid darkgrey;
+}
+
+.salinglist {
+    width: 3000px;
+    position: relative;
+    left: 0px;
+}
+
+.salinglist li {
+    float: left;
+}
+
+.salinglist .first {
+    width: 400px;
+    height: 260px;
+    /*background-color: dodgerblue;*/
+    margin: 10px 15px;
+}
+
+.first img {
+    width: 170px;
+    height: 260px;
+    float: left;
+    cursor: pointer;
+}
+
+.first div {
+    margin-left: 180px;
+    color: gray;
+}
+
+.first .title {
+    width: 220px;
+    height: 50px;
+    color: #2983D5;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.first .time, .first .length {
+    height: 30px;
+
+}
+
+.first .time .time_type {
+    color: #2983D5;
+    cursor: pointer;
+}
+
+.first .dis_text {
+    margin-top: 20px;
+    height: 80px;
+    width: 220px;
+    color: #80a33b;
+    font-size: 1.1rem;
+}
+
+.dis_head {
+    font-size: 2.5rem;
+    color: darkgrey;
+}
+
+.first .btn_buy {
+    border-radius: 20px;
+    background-color: #2983d5;
+    width: 140px;
+    height: 36px;
+    position: absolute;
+    transform: translateY(41px);
+    margin-left: 220px;
+    text-align: center;
+    padding-top: 6px;
+    box-sizing: border-box;
+    margin-top: 11px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.salinglist .others {
+    width: 150px;
+    height: 260px;
+    /*background-color: dodgerblue;*/
+    margin: 10px 15px;
+}
+
+.others img {
+    width: 130px;
+    height: 190px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.others .movie_title {
+    padding-top: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.others .movie_title:hover, .comingtitle:hover {
+    color: #2983D5;
+}
+
+.others .btn_buy {
+    border-radius: 20px;
+    background-color: #2983d5;
+    width: 140px;
+    height: 30px;
+    position: relative;
+    padding-left: 0;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%);
+    line-height: 30px;
+}
+
+.btn_buy:hover {
+    background-color: #127bab;
+}
+
+.btn_list span {
+    display: block;
+    width: 40px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*上一个设计*/
+.btn_list .prev_list {
+    position: absolute;
+    transform: translate(-70px, 90%);
+}
+
+/*下一个设计*/
+.btn_list .next_list {
+    position: absolute;
+    transform: translate(1175px, 90%);
+}
+
+.btn_list span:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.comingmovies {
+    width: 1155px;
+    height: 270px;
+    /*background-color: darkgrey;*/
+    margin-left: 100px;
+    overflow: hidden;
+    border-top: 1px solid darkgrey;
+}
+
+.cominglist {
+    width: 6000px;
+    position: relative;
+    left: 0px;
+}
+
+.cominglist li {
+    float: left;
+    width: 290px;
+    height: 270px;
+}
+
+.comingtime {
+    width: 290px;
+    height: 75px;
+    font-size: 1.8rem;
+    color: #afafaf;
+    padding-top: 30px;
+    padding-left: 3px;
+    box-sizing: border-box;
+}
+
+.cominglist img {
+    width: 120px;
+    height: 190px;
+    float: left;
+    cursor: pointer;
+}
+
+.comingtitle {
+    float: left;
+    width: 150px;
+    font-size: 1.1rem;
+    margin: 3px 10px;
+    cursor: pointer;
+}
+
+.comingtype {
+    float: left;
+    width: 150px;
+    margin: 2px 10px;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.director {
+    float: left;
+    width: 150px;
+    height: 70px;
+    margin: 2px 10px;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.comingbuy {
+    float: left;
+    width: 120px;
+    height: 30px;
+    background-color: #74ab34;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    border-radius: 15px;
+    transform: translate(10%, 100%);
+    color: white;
+    cursor: pointer;
+}
+
+.comingbuy:hover {
+    background-color: green;
+}
+
+.btn_coming span {
+    display: block;
+    width: 40px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*上一个设计*/
+.btn_coming .prev_coming {
+    position: absolute;
+    transform: translate(-70px, 90%);
+}
+
+/*下一个设计*/
+.btn_coming .next_coming {
+    position: absolute;
+    transform: translate(1175px, 90%);
+}
+
+.btn_coming span:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.readmore {
+    width: 160px;
+    height: 38px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid grey;
+    text-align: center;
+    line-height: 38px;
+    color: grey;
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+}
+
+.readmore:hover {
+    border: 0px;
+    background-color: #2983d5;
+    color: white;
+}
+
+.cover_info {
+    width: 130px;
+    height: 190px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -249px);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*display: none;*/
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cover_info p {
+    margin: 0px;
+    padding: 10px 10px 0px 10px;
+}
+
+.cover_info .salingtime, .cover_info .salingtype, .cover_info .salinglength {
+    color: grey;
+    font-size: 0.8rem;
+
+}
+
+.cover_info .salingdis_head {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.cover_info .salingdis_text {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.cover_info:hover {
+    opacity: 1;
+}
+
+.endText {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.JBlinear {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(to right, yellow, blue);
+}
+
+.footinner {
+    position: absolute;
+    top: 4px;
+    width: auto;
+    height: 201px;
+    margin-left: 170px;
+    padding-top: 40px;
+
+    font-size: 13px;
+
+}
+
+.fot1 {
+    width: 200px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot2 {
+    width: 401px;
+    height: 157px;
+    float: left;
+    display: inline;
+
+}
+
+.fot3 {
+    width: 230px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot3 .clearfix{
+    position: relative;
+    width: auto;
+    height: auto;
+    transform: translate(0,-120%);
+}
+
+.fot4 {
+    width: 155px;
+    height: 157px;
+    float: left;
+
+}
+
+.fot1 dt a {
+
+    background: url(//static1.mtime.cn/20180730161010/images/2014/head.png) no-repeat 0 0;
+    width: 136px;
+    height: 44px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+
+}
+
+.fot1Txt {
+    width: 160px;
+    height: 23px;
+    margin: 0;
+
+}
+
+.fot1Txt a {
+    color: #333;
+    text-decoration: none;
+}
+
+.fot1 dl {
+    position: absolute;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    padding: 0 20px;
+
+}
+
+.fot1 .txt2 {
+    margin-left: 30px;
+}
+
+.fot2 dl {
+    float: left;
+    margin: 0;
+    margin-left: 33px;
+
+    line-height: 2em;
+}
+
+.fot2 dl dd {
+    margin: 0;
+    font-size: 16px;
+    line-height: 2em;
+
+}
+
+.fot2 dl dt {
+    color: #333;
+}
+
+.fot2 dl dd a {
+    color: black;
+    text-decoration: none;
+}
+
+.fot2 .sina {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot2 .weixin {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    background-position: -170px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot2 .rss {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -140px -9px;
+    background-position: -200px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fot3 dl {
+    margin: 0 29px;
+}
+
+.fot3 dl strong {
+    font-size: 18px;
+}
+
+.fot3 dl .fr {
+    float: right;
+}
+
+.fot3 dd {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.fot3 .input {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -35px;
+    width: 163px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    padding-top: 1px;
+    border: 0px;
+}
+
+.fot3 .input #iptEMail {
+    background: transparent;
+    width: 100px;
+    text-align: center;
+    margin-left: 12px;
+    border: 0;
+    height: 22px;
+}
+
+.fot3 .input a {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -330px -9px;
+    width: 54px;
+    height: 25px;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+}
+
+.fot4 dl {
+    margin: 0;
+    text-align: center;
+}
+
+.fot4 dl dt {
+    color: #7d7d7d;
+}
+
+.fot4 dl dt strong {
+    color: #333;
+    font-size: 18px;
+}
+
+.fot4 dl dd {
+    margin: 0;
+    margin-top: 12px;
+}
+
+.fot4 dl dd a i {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/foot.png) no-repeat -795px -9px;
+    width: 99px;
+    height: 99px;
+    margin: 0 auto;
+    display: block;
+}
+
+.foot {
+    position: absolute;
+    top: 243px;
+    padding-left: 40px;
+    color: #7e7e7f;
+    text-align: center;
+    font-family: verdana, "宋体";
+
+    line-height: 2em;
+}
+
+.foot p {
+    margin: 0;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.mr12 {
+    margin-left: 12px;
+}
+
+.ml12 {
+    margin-right: 12px;
+}
+
+.foot a {
+    color: #7e7e7f;
+    text-align: center;
+    text-decoration: none;
+}
+
+.credible {
+    padding-top: 12px;
+    text-align: center;
+}
+
+.credibler {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/allicon.gif) no-repeat 0 0;
+    display: inline-block;
+    width: 68px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+    background-position: 0 -120px;
+}
+
+.goodfaith {
+    background: url(//static1.mtime.cn/20180730161010/images/2014/allicon.gif) no-repeat 0 0;
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+    background-position: -68px -120px;
+    width: 70px
+}
+
+.db_scennav dd .image_btn {
+    color: white;
+    background-color: #004c7f;
+}
